@@ -43,7 +43,3313 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%237C3AED'/%3E%3Cstop offset='100%25' stop-color='%236366F1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23g)'/%3E%3Ctext x='50' y='66' font-size='50' font-weight='900' fill='white' text-anchor='middle' font-family='sans-serif'%3EM%3C/text%3E%3C/svg%3E">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css">
+  <style>
+/* ==========================================================================
+   Mariam Mohamed — SEO & ASO Specialist Portfolio (Redesign 2.0)
+   Style: Godly / Awwwards "Organic Growth OS" (Futuristic Lavender & Glass Bento)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Caveat:wght@600;700&family=JetBrains+Mono:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap');
+
+:root {
+  color-scheme: light;
+  accent-color: #6D28D9;
+  scrollbar-color: #A78BFA #F5F3FF;
+
+  /* Colors - Pure Light Mode matching WhatsApp Reference Image */
+  --bg-primary: #FAF8FF;
+  --bg-secondary: #F3EEFE;
+  --bg-tertiary: #EAE3FC;
+  --bg-card: rgba(255, 255, 255, 0.92);
+  --bg-card-hover: #FFFFFF;
+  --bg-glass-elevated: #FFFFFF;
+  
+  --primary: #6D28D9;
+  --primary-light: #7C3AED;
+  --primary-lighter: #C4B5FD;
+  --primary-dark: #4C1D95;
+  --primary-glow: rgba(109, 40, 217, 0.20);
+  
+  --accent-cyan: #0E7490;
+  --accent-emerald: #047857;
+  --accent-amber: #B45309;
+  --accent-rose: #BE123C;
+  --accent-indigo: #4F46E5;
+  
+  --text-main: #110D28;
+  --text-muted: #4B4468;
+  --text-subtle: #645E80;
+  --text-inverse: #FFFFFF;
+  
+  --border-subtle: rgba(139, 92, 246, 0.14);
+  --border-card: rgba(139, 92, 246, 0.20);
+  --border-highlight: rgba(109, 40, 217, 0.45);
+  
+  --shadow-sm: 0 4px 14px rgba(109, 40, 217, 0.05);
+  --shadow-md: 0 12px 36px -6px rgba(109, 40, 217, 0.08), 0 4px 12px rgba(20, 14, 40, 0.03);
+  --shadow-lg: 0 24px 54px -12px rgba(109, 40, 217, 0.14), 0 8px 24px rgba(20, 14, 40, 0.04);
+  --shadow-glow: 0 0 36px rgba(139, 92, 246, 0.25);
+  
+  --brand-gradient: linear-gradient(135deg, #6D28D9 0%, #7C3AED 50%, #A855F7 100%);
+  --brand-gradient-hover: linear-gradient(135deg, #5B21B6 0%, #6D28D9 50%, #9333EA 100%);
+  --surface-gradient: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(248,245,255,0.90) 100%);
+  
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-ar: 'Cairo', 'Tajawal', sans-serif;
+  --font-hand: 'Caveat', cursive;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 9999px;
+  
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-bounce: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  
+  --nav-height: 74px;
+  --max-w: 1260px;
+  
+  --brand-gradient: linear-gradient(135deg, #8B5CF6 0%, #6366F1 50%, #C084FC 100%);
+  --brand-gradient-hover: linear-gradient(135deg, #A78BFA 0%, #818CF8 50%, #D8B4FE 100%);
+  --surface-gradient: linear-gradient(180deg, rgba(29,22,54,0.94) 0%, rgba(18,14,36,0.88) 100%);
+}
+
+/* Base & Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  transition: background-color var(--transition-smooth), color var(--transition-smooth);
+  position: relative;
+  min-height: 100vh;
+}
+
+html[dir="rtl"] body {
+  font-family: var(--font-ar);
+}
+
+html[dir="rtl"] .font-hand {
+  font-family: var(--font-ar);
+  font-weight: 800;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: rgba(124, 58, 237, 0.28);
+  color: var(--primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-xs);
+}
+
+/* Scroll progress bar */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3.5px;
+  width: 0%;
+  background: var(--brand-gradient);
+  z-index: 9999;
+  transition: width 0.08s linear;
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.7);
+}
+
+/* Ambient Glowing Background Blobs */
+.ambient-glow {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+  max-width: 100vw;
+  contain: paint;
+}
+
+.ambient-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.6;
+  will-change: transform;
+  animation: blob-float 18s infinite alternate ease-in-out;
+}
+
+.ambient-blob-1 {
+  width: 580px;
+  height: 580px;
+  top: -120px;
+  left: 3%;
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.38) 0%, rgba(139, 92, 246, 0.06) 70%);
+}
+
+.ambient-blob-2 {
+  width: 700px;
+  height: 700px;
+  top: 35%;
+  right: -150px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.32) 0%, rgba(168, 85, 247, 0.06) 70%);
+  animation-duration: 25s;
+  animation-delay: -6s;
+}
+
+.ambient-blob-3 {
+  width: 520px;
+  height: 520px;
+  bottom: 8%;
+  left: 12%;
+  background: radial-gradient(circle, rgba(192, 132, 252, 0.28) 0%, rgba(99, 102, 241, 0.06) 70%);
+  animation-duration: 22s;
+  animation-delay: -11s;
+}
+
+@keyframes blob-float {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(45px, 40px) scale(1.08); }
+  100% { transform: translate(-35px, 55px) scale(0.94); }
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
+
+/* ==========================================================================
+   Header & Navigation (Light Mode Only, Perfectly Padded)
+   ========================================================================== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: var(--nav-height);
+  background: rgba(250, 248, 255, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(139, 92, 246, 0.16);
+  transition: all var(--transition-smooth);
+}
+
+.site-header.scrolled {
+  height: 66px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 30px -4px rgba(109, 40, 217, 0.08);
+  border-bottom: 1px solid rgba(139, 92, 246, 0.22);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  gap: 20px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.brand-avatar-pill {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-pill);
+  background: var(--brand-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 1.15rem;
+  box-shadow: 0 4px 16px rgba(109, 40, 217, 0.30);
+  transition: transform var(--transition-fast);
+}
+
+.brand-logo:hover .brand-avatar-pill {
+  transform: scale(1.05) rotate(-3deg);
+}
+
+.brand-text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-name {
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+  color: var(--text-main);
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.brand-role-mini {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+  line-height: 1.2;
+  margin-top: 3px;
+  white-space: nowrap;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  max-width: 720px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 4px 6px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(139, 92, 246, 0.15);
+  border-radius: var(--radius-pill);
+  box-shadow: 0 2px 8px rgba(109, 40, 217, 0.04);
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 7px 13px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  line-height: 1.2;
+}
+
+.nav-link:hover {
+  background: rgba(109, 40, 217, 0.08);
+  color: var(--primary);
+  transform: translateY(-1px);
+}
+
+.nav-link.active {
+  background: var(--primary);
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 12px rgba(109, 40, 217, 0.25);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.lang-btn {
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 8px rgba(109, 40, 217, 0.05);
+}
+
+.lang-btn:hover {
+  border-color: var(--primary);
+  background: var(--bg-secondary);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6D28D9 0%, #7C3AED 50%, #9333EA 100%);
+  color: #FFFFFF !important;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 10px 22px;
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(109, 40, 217, 0.32);
+  transition: all var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.nav-cta-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+}
+
+.nav-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(109, 40, 217, 0.42);
+}
+
+.nav-cta-btn:hover::after {
+  left: 140%;
+}
+
+.menu-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-pill);
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.menu-toggle:hover {
+  background: var(--bg-secondary);
+  border-color: var(--primary);
+}
+
+@media (max-width: 1080px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  .menu-toggle {
+    display: flex !important;
+  }
+  .nav-cta-btn {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    height: 62px;
+  }
+  .brand-avatar-pill {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+  .brand-name {
+    font-size: 1.05rem;
+  }
+  .brand-role-mini {
+    font-size: 0.64rem;
+  }
+  .lang-btn {
+    padding: 6px 12px;
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .site-header {
+    height: 58px;
+  }
+  .nav-wrapper {
+    gap: 6px;
+  }
+  .brand-logo {
+    gap: 6px;
+  }
+  .brand-avatar-pill {
+    width: 32px;
+    height: 32px;
+    font-size: 0.88rem;
+  }
+  .brand-name {
+    font-size: 0.90rem;
+    font-weight: 800;
+  }
+  .brand-role-mini {
+    display: none;
+  }
+  .nav-actions {
+    gap: 6px;
+  }
+  .lang-btn {
+    padding: 4px 8px;
+    font-size: 0.72rem;
+  }
+  .menu-toggle {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+/* Mobile Drawer */
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 84%;
+  max-width: 320px;
+  height: 100vh;
+  background: var(--bg-glass-elevated);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: var(--shadow-lg);
+  z-index: 1001;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: right var(--transition-smooth), visibility var(--transition-smooth);
+  visibility: hidden;
+}
+
+html[dir="rtl"] .mobile-drawer {
+  right: auto;
+  left: -100%;
+  transition: left var(--transition-smooth), visibility var(--transition-smooth);
+}
+
+.mobile-drawer.open {
+  right: 0;
+  visibility: visible;
+}
+
+html[dir="rtl"] .mobile-drawer.open {
+  left: 0;
+  visibility: visible;
+}
+
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 9, 26, 0.65);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-smooth);
+}
+
+.drawer-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.drawer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+}
+
+.drawer-link {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* ==========================================================================
+   Hero Section 2.0 (Godly / Awwwards "Growth Command OS")
+   ========================================================================== */
+
+.hero-section {
+  padding-top: 36px;
+  padding-bottom: 70px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 24px;
+    padding-bottom: 50px;
+  }
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 48px;
+}
+
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 46px;
+  }
+}
+
+/* Operational Status Beacon */
+.os-beacon-bar {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 7px 18px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  font-size: 0.80rem;
+  font-weight: 700;
+  color: var(--text-main);
+  font-family: var(--font-mono);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 20px;
+  backdrop-filter: blur(12px);
+  max-width: 100%;
+}
+
+@media (max-width: 480px) {
+  .os-beacon-bar {
+    padding: 6px 12px;
+    font-size: 0.72rem;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .os-beacon-bar {
+    padding: 5px 10px;
+    font-size: 0.68rem;
+    gap: 5px;
+    margin-bottom: 14px;
+  }
+}
+
+.pulse-beacon {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-emerald);
+  position: relative;
+}
+
+.pulse-beacon::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: var(--accent-emerald);
+  opacity: 0.45;
+  animation: beacon-ping 2s infinite ease-out;
+}
+
+@keyframes beacon-ping {
+  0% { transform: scale(0.6); opacity: 0.85; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+
+/* Requested Title Tag Badge */
+.requested-header-tag {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.10) 0%, rgba(99, 102, 241, 0.08) 100%);
+  border: 1.5px solid var(--border-highlight);
+  font-size: 0.86rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 22px;
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.10);
+  backdrop-filter: blur(14px);
+  max-width: 100%;
+  line-height: 1.4;
+}
+
+@media (max-width: 480px) {
+  .requested-header-tag {
+    padding: 6px 12px;
+    font-size: 0.74rem;
+    line-height: 1.35;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .requested-header-tag {
+    padding: 5px 10px;
+    font-size: 0.70rem;
+    line-height: 1.35;
+    margin-bottom: 14px;
+  }
+}
+
+.requested-header-tag .badge-icon {
+  color: var(--primary);
+  display: inline-flex;
+}
+
+/* Hero Typography */
+.hero-name-row {
+  margin-bottom: 12px;
+}
+
+.hero-name {
+  font-size: clamp(2rem, 7.5vw, 4.6rem);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: var(--text-main);
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.hero-name-underline {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 14px;
+  pointer-events: none;
+}
+
+.hero-name-underline path {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: drawWavyLine 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+}
+
+@keyframes drawWavyLine {
+  to { stroke-dashoffset: 0; }
+}
+
+.hero-main-title {
+  font-size: clamp(1.25rem, 4.8vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-bio {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 620px;
+  margin-bottom: 32px;
+}
+
+/* 4 Core Specialties Strip (from Banner) */
+.hero-specialty-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 34px;
+}
+
+@media (max-width: 900px) {
+  .hero-specialty-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 26px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-specialty-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .specialty-card {
+    padding: 10px 6px;
+    gap: 6px;
+  }
+  .specialty-icon-circle {
+    width: 32px;
+    height: 32px;
+  }
+  .specialty-label {
+    font-size: 0.74rem;
+  }
+}
+
+.specialty-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  padding: 14px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  backdrop-filter: blur(14px);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.specialty-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+.specialty-icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-pill);
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.specialty-label {
+  font-size: 0.84rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+/* Hero CTA Row */
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 34px;
+}
+
+@media (max-width: 640px) {
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .hero-cta-group .btn-primary,
+  .hero-cta-group .btn-whatsapp,
+  .hero-cta-group .btn-secondary {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 13px 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-cta-group {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .hero-cta-group .btn-primary,
+  .hero-cta-group .btn-whatsapp,
+  .hero-cta-group .btn-secondary {
+    padding: 11px 14px;
+    font-size: 0.88rem;
+  }
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--brand-gradient);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.98rem;
+  padding: 14px 28px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 10px 28px -5px rgba(109, 40, 217, 0.40);
+  transition: all var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.32), transparent);
+  transform: skewX(-20deg);
+  animation: btnShimmer 4.5s ease-in-out infinite;
+}
+
+@keyframes btnShimmer {
+  0%, 75% { left: -100%; }
+  100% { left: 200%; }
+}
+
+.btn-primary:hover {
+  background: var(--brand-gradient-hover);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 16px 36px -6px rgba(109, 40, 217, 0.55);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-card);
+  color: var(--text-main);
+  border: 1.5px solid var(--border-card);
+  font-weight: 700;
+  font-size: 0.98rem;
+  padding: 13px 26px;
+  border-radius: var(--radius-pill);
+  backdrop-filter: blur(14px);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+}
+
+.btn-secondary:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #25D366 0%, #1EBE5D 50%, #128C7E 100%);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.96rem;
+  padding: 12px 24px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 8px 24px -4px rgba(37, 211, 102, 0.45), 0 2px 6px rgba(18, 140, 126, 0.25);
+  transition: all var(--transition-smooth);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.22);
+}
+
+.btn-whatsapp::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.32), transparent);
+  transform: skewX(-20deg);
+  animation: btnShimmer 5s ease-in-out infinite 1.8s;
+}
+
+.btn-whatsapp:hover {
+  background: linear-gradient(135deg, #2ae26e 0%, #22ce66 50%, #0e7367 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px -4px rgba(37, 211, 102, 0.6), 0 4px 10px rgba(18, 140, 126, 0.4);
+  color: #FFFFFF;
+}
+
+.btn-wa-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Handwritten Accent Note */
+.hero-handwritten-note {
+  font-family: var(--font-hand);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transform: rotate(-3deg);
+  margin-top: 6px;
+}
+
+html[dir="rtl"] .hero-handwritten-note {
+  font-family: var(--font-ar);
+  font-size: 1.35rem;
+  transform: rotate(2deg);
+}
+
+/* ==========================================================================
+   Hero Visual Interactive Stage (3D Spatial Canvas)
+   ========================================================================== */
+
+.hero-visual-stage {
+  position: relative;
+  perspective: 1200px;
+  width: 100%;
+}
+
+.stage-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.laptop-mockup-card {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 24px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s var(--transition-smooth);
+  position: relative;
+}
+
+.laptop-mockup-card:hover {
+  transform: rotateY(-4deg) rotateX(4deg) translateY(-8px);
+  box-shadow: var(--shadow-glow);
+}
+
+.browser-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.browser-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.browser-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot-red { background: #FF5F56; }
+.dot-yellow { background: #FFBD2E; }
+.dot-green { background: #27C93F; }
+
+.search-bar-mockup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-pill);
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  width: 65%;
+  font-family: var(--font-mono);
+}
+
+.search-bar-mockup svg {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.live-cursor-typing {
+  color: var(--primary);
+  font-weight: 700;
+  display: inline-block;
+}
+
+.chart-preview-container {
+  background: var(--surface-gradient);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.chart-header-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 520px) {
+  .chart-header-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.chart-metric-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-metric-label {
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  color: var(--text-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.chart-metric-value {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary);
+  font-family: var(--font-mono);
+}
+
+.svg-chart-svg {
+  width: 100%;
+  height: 120px;
+  overflow: visible;
+}
+
+.chart-curve-path {
+  fill: none;
+  stroke: url(#chart-gradient);
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: draw-chart 2.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes draw-chart {
+  to { stroke-dashoffset: 0; }
+}
+
+.chart-area-fill {
+  fill: url(#chart-fill-gradient);
+  opacity: 0.45;
+}
+
+.floating-badge {
+  position: absolute;
+  background: #FFFFFF;
+  border: 1.5px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: 10px 18px;
+  box-shadow: 0 14px 34px -6px rgba(109, 40, 217, 0.14);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.floating-badge:hover {
+  transform: scale(1.06) translateY(-5px);
+  border-color: var(--primary);
+  box-shadow: 0 20px 42px -6px rgba(109, 40, 217, 0.22);
+}
+
+.badge-top-right {
+  top: -24px;
+  right: -20px;
+  animation: floatBadge1 4.5s ease-in-out infinite;
+}
+
+.badge-bottom-left {
+  bottom: -22px;
+  left: -20px;
+  animation: floatBadge2 5.2s ease-in-out infinite;
+}
+
+@keyframes floatBadge1 {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1.5deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes floatBadge2 {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-14px) rotate(-1.8deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.badge-icon-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.badge-icon-rocket { background: linear-gradient(135deg, #EC4899, #8B5CF6); }
+.badge-icon-ranking { background: linear-gradient(135deg, #3B82F6, #10B981); }
+
+.floating-badge-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-title {
+  font-size: 0.84rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.badge-subtitle {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--primary);
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 768px) {
+  .hero-visual-stage {
+    perspective: none;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 14px 0 20px;
+  }
+
+  .stage-wrapper {
+    padding-bottom: 12px;
+  }
+
+  .laptop-mockup-card {
+    padding: 16px 14px;
+    border-radius: var(--radius-lg);
+    transform: none !important;
+  }
+
+  .laptop-mockup-card:hover {
+    transform: none !important;
+  }
+
+  .browser-header {
+    gap: 6px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+  }
+
+  .search-bar-mockup {
+    width: auto;
+    flex: 1;
+    min-width: 0;
+    padding: 5px 8px;
+    font-size: 0.72rem;
+  }
+
+  .browser-header .badge-status-pill {
+    font-size: 0.68rem;
+    padding: 3px 7px;
+    flex-shrink: 0;
+  }
+
+  .badge-top-right {
+    top: -12px;
+    right: 4px;
+    animation: none;
+  }
+
+  .badge-bottom-left {
+    bottom: -12px;
+    left: 4px;
+    animation: none;
+  }
+
+  .floating-badge {
+    padding: 6px 12px;
+    gap: 8px;
+    max-width: 88%;
+  }
+
+  .floating-badge .badge-icon-wrap {
+    width: 30px;
+    height: 30px;
+  }
+
+  .floating-badge .badge-title {
+    font-size: 0.76rem;
+  }
+
+  .floating-badge .badge-subtitle {
+    font-size: 0.65rem;
+  }
+
+  .chart-preview-container {
+    padding: 10px;
+  }
+
+  .chart-header-metrics {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .chart-metric-value {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-visual-stage {
+    padding: 8px 0 16px;
+  }
+  .laptop-mockup-card {
+    padding: 12px 8px;
+  }
+  .browser-header {
+    gap: 4px;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+  }
+  .browser-dots {
+    gap: 4px;
+  }
+  .browser-dot {
+    width: 6px;
+    height: 6px;
+  }
+  .search-bar-mockup {
+    font-size: 0.65rem;
+    padding: 4px 6px;
+    gap: 4px;
+  }
+  .browser-header .badge-status-pill {
+    font-size: 0.60rem;
+    padding: 2px 5px;
+  }
+  .floating-badge {
+    padding: 4px 8px;
+    gap: 6px;
+    max-width: 80%;
+  }
+  .floating-badge .badge-icon-wrap {
+    width: 24px;
+    height: 24px;
+  }
+  .floating-badge .badge-title {
+    font-size: 0.68rem;
+  }
+  .floating-badge .badge-subtitle {
+    font-size: 0.58rem;
+  }
+  .chart-preview-container {
+    padding: 8px 6px;
+  }
+  .chart-header-metrics {
+    gap: 4px;
+    margin-bottom: 8px;
+  }
+  .chart-metric-label {
+    font-size: 0.58rem;
+  }
+  .chart-metric-value {
+    font-size: 0.88rem;
+  }
+  .svg-chart-svg {
+    height: 80px;
+  }
+}
+
+/* ==========================================================================
+   Floating Quick-Action WhatsApp Button
+   ========================================================================== */
+
+.floating-wa-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  pointer-events: auto;
+}
+
+html[dir="rtl"] .floating-wa-container {
+  right: auto;
+  left: 24px;
+}
+
+.floating-wa-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #25D366 0%, #1EBE5D 50%, #128C7E 100%);
+  color: #FFFFFF;
+  padding: 8px 18px 8px 10px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 10px 28px -4px rgba(37, 211, 102, 0.55), 0 4px 12px rgba(18, 140, 126, 0.35);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  font-size: 0.88rem;
+  transition: all var(--transition-smooth);
+  position: relative;
+  backdrop-filter: blur(8px);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.22);
+}
+
+.floating-wa-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 16px 36px -4px rgba(37, 211, 102, 0.7), 0 6px 16px rgba(18, 140, 126, 0.45);
+  color: #FFFFFF;
+}
+
+.floating-wa-pulse {
+  position: absolute;
+  inset: -4px;
+  border-radius: var(--radius-pill);
+  background: rgba(37, 211, 102, 0.45);
+  z-index: -1;
+  animation: waPulseRing 2.4s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+}
+
+@keyframes waPulseRing {
+  0% { transform: scale(0.95); opacity: 0.85; }
+  100% { transform: scale(1.28); opacity: 0; }
+}
+
+.floating-wa-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.floating-wa-label,
+.floating-wa-tooltip {
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 768px) {
+  .floating-wa-container {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  html[dir="rtl"] .floating-wa-container {
+    left: 20px;
+  }
+
+  .floating-wa-btn {
+    padding: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    justify-content: center;
+  }
+
+  .floating-wa-btn .floating-wa-label,
+  .floating-wa-btn .floating-wa-tooltip {
+    display: none !important;
+  }
+
+  .floating-wa-pulse {
+    border-radius: 50%;
+  }
+}
+
+/* ==========================================================================
+   Platforms Ribbon (Banner Replication)
+   ========================================================================== */
+
+.platforms-ribbon-section {
+  padding: 24px 0 60px;
+}
+
+.platforms-ribbon-bar {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  padding: 18px 32px;
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.ribbon-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+
+.ribbon-logos-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.platform-logo-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.88;
+  transition: all var(--transition-fast);
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-secondary);
+}
+
+.platform-logo-item:hover {
+  opacity: 1;
+  transform: translateY(-2px) scale(1.04);
+  background: var(--bg-glass-elevated);
+  box-shadow: var(--shadow-sm);
+}
+
+.platform-logo-item svg, .platform-logo-item img {
+  height: 22px;
+  width: auto;
+}
+
+.platform-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* ==========================================================================
+   Bento Grid: Verified Evidence & Impact (Godly-Style Bento)
+   ========================================================================== */
+
+.metrics-section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.section-header-center {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 50px;
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: var(--font-mono);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  color: var(--text-main);
+  line-height: 1.18;
+  margin-bottom: 14px;
+}
+
+.section-desc {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* The Bento Grid Container */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.bento-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-smooth);
+}
+
+.bento-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-lg);
+  background: var(--bg-card-hover);
+}
+
+/* Bento Card Sizes */
+.bento-col-7 { grid-column: span 7; }
+.bento-col-5 { grid-column: span 5; }
+.bento-col-4 { grid-column: span 4; }
+.bento-col-8 { grid-column: span 8; }
+.bento-col-6 { grid-column: span 6; }
+.bento-col-12 { grid-column: span 12; }
+
+@media (max-width: 1024px) {
+  .bento-col-7, .bento-col-5, .bento-col-4, .bento-col-8, .bento-col-6 {
+    grid-column: span 12;
+  }
+}
+
+.bento-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.bento-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-secondary);
+  font-size: 0.76rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--primary);
+}
+
+.bento-stat-hero {
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--text-main);
+  font-family: var(--font-mono);
+  margin-bottom: 8px;
+}
+
+.bento-stat-label {
+  font-size: 0.94rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 16px;
+}
+
+.bento-pill-data-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.bento-pill-item {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-secondary);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+}
+
+.bento-pill-item-val {
+  font-weight: 800;
+  color: var(--primary);
+  font-family: var(--font-mono);
+}
+
+.bento-pill-item-lbl {
+  color: var(--text-subtle);
+  font-size: 0.70rem;
+}
+
+/* ==========================================================================
+   Interactive Tools: SERP Simulator & ROI Calculator
+   ========================================================================== */
+
+.interactive-tools-section {
+  padding: 80px 0;
+}
+
+.tools-tabs-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.tool-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-card);
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+}
+
+.tool-tab-btn.active {
+  background: var(--brand-gradient);
+  color: #FFFFFF;
+  border-color: transparent;
+  box-shadow: 0 8px 24px -4px rgba(124, 58, 237, 0.4);
+}
+
+.tool-tab-pane {
+  display: none;
+}
+
+.tool-tab-pane.active {
+  display: block;
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Live SERP Simulator */
+.serp-simulator-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 36px;
+}
+
+@media (max-width: 900px) {
+  .serp-simulator-card {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .serp-simulator-card {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 16px 10px;
+    gap: 20px;
+    border-radius: var(--radius-lg);
+  }
+  .control-input,
+  .control-textarea {
+    padding: 10px 10px;
+    font-size: 0.82rem;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .tool-tab-btn {
+    padding: 8px 12px;
+    font-size: 0.80rem;
+  }
+}
+
+.simulator-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.control-label {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--text-main);
+  display: flex;
+  justify-content: space-between;
+}
+
+.control-counter {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--primary);
+}
+
+.control-input, .control-select, .control-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  font-size: 0.92rem;
+  transition: border-color var(--transition-fast);
+}
+
+.control-input:focus, .control-select:focus, .control-textarea:focus {
+  border-color: var(--primary);
+  background: var(--bg-glass-elevated);
+}
+
+.preset-pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.preset-pill {
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.preset-pill:hover, .preset-pill.active {
+  background: var(--primary-lighter);
+  color: var(--primary-dark);
+  border-color: var(--primary);
+}
+
+/* Google SERP Preview Box */
+.serp-preview-box {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  color: #202124;
+}
+
+.serp-preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.serp-device-switch {
+  display: flex;
+  gap: 8px;
+}
+
+.device-btn {
+  padding: 4px 10px;
+  border-radius: var(--radius-xs);
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.15);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: inherit;
+}
+
+.device-btn.active {
+  background: #1A73E8;
+  color: #FFFFFF;
+  border-color: #1A73E8;
+}
+
+.serp-result-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.serp-url-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.82rem;
+  color: #202124;
+}
+
+.serp-favicon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #F1F3F4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.serp-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1A0DAB;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.serp-title:hover {
+  text-decoration: underline;
+}
+
+.serp-description {
+  font-size: 0.92rem;
+  color: #4D5156;
+  line-height: 1.55;
+}
+
+.serp-rich-snippet {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: #70757A;
+  margin-top: 4px;
+}
+
+.serp-stars {
+  color: #F4B400;
+  letter-spacing: 2px;
+}
+
+/* Organic ROI Calculator */
+.roi-calculator-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .roi-calculator-card {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+}
+
+.slider-group {
+  margin-bottom: 22px;
+}
+
+.slider-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.slider-title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.slider-display-val {
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--primary);
+}
+
+.range-slider {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--bg-secondary);
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 3px solid #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.4);
+  transition: transform var(--transition-fast);
+}
+
+.range-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+.roi-result-box {
+  background: var(--surface-gradient);
+  border: 1.5px solid var(--border-highlight);
+  border-radius: var(--radius-lg);
+  padding: 32px 26px;
+  box-shadow: var(--shadow-glow);
+  text-align: center;
+}
+
+.roi-badge {
+  display: inline-flex;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  background: rgba(139, 92, 246, 0.1);
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--primary);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-family: var(--font-mono);
+}
+
+.roi-total-number {
+  font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+  font-weight: 900;
+  color: var(--accent-emerald);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 8px;
+  font-family: var(--font-mono);
+}
+
+.roi-sub-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 22px 0 26px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.roi-sub-stat-num {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  font-family: var(--font-mono);
+}
+
+.roi-sub-stat-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Case Studies & Evidence Grid
+   ========================================================================== */
+
+.cases-section {
+  padding: 80px 0;
+}
+
+.cases-filter-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.case-filter-btn {
+  padding: 9px 20px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+}
+
+.case-filter-btn:hover, .case-filter-btn.active {
+  background: var(--brand-gradient);
+  color: #FFFFFF;
+  border-color: transparent;
+  box-shadow: 0 6px 18px -3px rgba(124, 58, 237, 0.4);
+}
+
+.cases-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  min-height: 480px;
+}
+
+@media (max-width: 1024px) {
+  .cases-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .cases-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.case-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-smooth);
+  position: relative;
+}
+
+.case-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.case-card-thumb-wrap {
+  position: relative;
+  height: 200px;
+  background: var(--bg-secondary);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.case-card-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.case-card:hover .case-card-thumb {
+  transform: scale(1.06);
+}
+
+.case-badge-pill {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  background: rgba(16, 12, 32, 0.8);
+  backdrop-filter: blur(10px);
+  color: #FFFFFF;
+  font-size: 0.74rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+html[dir="rtl"] .case-badge-pill {
+  left: auto;
+  right: 14px;
+}
+
+.case-zoom-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(109, 40, 217, 0.45);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.case-card-thumb-wrap:hover .case-zoom-overlay {
+  opacity: 1;
+}
+
+.zoom-icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+}
+
+.case-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.case-card-title {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.case-card-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 18px;
+  flex: 1;
+}
+
+.case-metrics-badges {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding: 12px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+}
+
+.case-metric-small {
+  display: flex;
+  flex-direction: column;
+}
+
+.case-metric-val {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--primary);
+  font-family: var(--font-mono);
+}
+
+.case-metric-name {
+  font-size: 0.70rem;
+  color: var(--text-subtle);
+  font-weight: 600;
+}
+
+.case-card-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 0;
+  border-radius: var(--radius-pill);
+  background: rgba(139, 92, 246, 0.08);
+  color: var(--primary);
+  border: 1px solid var(--border-card);
+  font-size: 0.86rem;
+  font-weight: 700;
+  transition: all var(--transition-fast);
+}
+
+.case-card-btn:hover {
+  background: var(--brand-gradient);
+  color: #FFFFFF;
+  border-color: transparent;
+  box-shadow: var(--shadow-sm);
+}
+
+/* ==========================================================================
+   Experience Timeline (AAIT & Azraq from CV)
+   ========================================================================== */
+
+.experience-section {
+  padding: 80px 0;
+}
+
+.timeline-container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 28px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--primary) 0%, rgba(139, 92, 246, 0.1) 100%);
+}
+
+html[dir="rtl"] .timeline-container::before {
+  left: auto;
+  right: 28px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 45px;
+  padding-left: 70px;
+}
+
+html[dir="rtl"] .timeline-item {
+  padding-left: 0;
+  padding-right: 70px;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 0;
+  left: 17px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--brand-gradient);
+  border: 4px solid var(--bg-primary);
+  box-shadow: 0 0 14px rgba(124, 58, 237, 0.45);
+}
+
+html[dir="rtl"] .timeline-dot {
+  left: auto;
+  right: 17px;
+}
+
+.timeline-content-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+}
+
+.timeline-content-card:hover {
+  transform: translateX(6px);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+html[dir="rtl"] .timeline-content-card:hover {
+  transform: translateX(-6px);
+}
+
+.timeline-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.timeline-role-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.timeline-company {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.timeline-period-badge {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--primary);
+  border: 1px solid var(--border-subtle);
+}
+
+.timeline-bullets-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.timeline-bullet-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.bullet-icon {
+  color: var(--primary);
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.timeline-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.timeline-tag-pill {
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-secondary);
+  color: var(--text-main);
+}
+
+/* ==========================================================================
+   Skills Matrix
+   ========================================================================== */
+
+.skills-section {
+  padding: 80px 0;
+}
+
+.skills-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .skills-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .skills-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill-cluster-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  padding: 26px;
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: all var(--transition-smooth);
+}
+
+.skill-cluster-box:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+.cluster-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cluster-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  background: var(--brand-gradient);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cluster-name {
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.cluster-pills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-item-pill {
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-main);
+  transition: all var(--transition-fast);
+}
+
+.skill-item-pill:hover {
+  background: var(--primary);
+  color: #FFFFFF;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Certifications & Education
+   ========================================================================== */
+
+.certs-section {
+  padding: 80px 0;
+}
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  max-width: 980px;
+  margin: 0 auto 40px;
+}
+
+@media (max-width: 768px) {
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cert-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-smooth);
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.cert-img-container {
+  height: 200px;
+  position: relative;
+  background: var(--bg-secondary);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cert-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.cert-card:hover .cert-img {
+  transform: scale(1.05);
+}
+
+.cert-content {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cert-badge-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cert-issuer {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+}
+
+.cert-validity {
+  font-size: 0.74rem;
+  color: var(--text-subtle);
+  font-family: var(--font-mono);
+}
+
+.cert-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.education-box {
+  max-width: 980px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow-sm);
+}
+
+.edu-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.edu-icon-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-pill);
+  background: var(--brand-gradient);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.edu-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.edu-sub {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.edu-grade-pill {
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid var(--border-highlight);
+  font-size: 0.86rem;
+  font-weight: 800;
+  color: var(--primary);
+  font-family: var(--font-mono);
+}
+
+/* ==========================================================================
+   FAQ Section
+   ========================================================================== */
+
+.faq-section {
+  padding: 80px 0;
+}
+
+.faq-accordion-wrap {
+  max-width: 820px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.faq-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  backdrop-filter: blur(14px);
+  transition: all var(--transition-fast);
+}
+
+.faq-item:hover {
+  border-color: var(--primary);
+}
+
+.faq-question-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  background: transparent;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-align: left;
+}
+
+html[dir="rtl"] .faq-question-btn {
+  text-align: right;
+}
+
+.faq-toggle-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.faq-item.open .faq-toggle-icon {
+  transform: rotate(180deg);
+  background: var(--primary);
+  color: #FFFFFF;
+}
+
+.faq-answer-pane {
+  display: none;
+  padding: 0 24px 22px;
+  font-size: 0.94rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 16px;
+}
+
+.faq-item.open .faq-answer-pane {
+  display: block;
+}
+
+/* ==========================================================================
+   Contact & "Let's Grow Together" CTA
+   ========================================================================== */
+
+.contact-section {
+  padding: 90px 0 100px;
+  position: relative;
+}
+
+.contact-mega-card {
+  background: var(--surface-gradient);
+  border: 1.5px solid var(--border-highlight);
+  border-radius: var(--radius-xl);
+  padding: 50px;
+  backdrop-filter: blur(24px);
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .contact-mega-card {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 30px 22px;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-mega-card {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 20px 10px;
+    gap: 22px;
+    border-radius: var(--radius-lg);
+  }
+  .contact-form-col {
+    padding: 16px 10px;
+    border-radius: var(--radius-md);
+  }
+  .channel-item-link {
+    padding: 10px 8px;
+    gap: 8px;
+  }
+  .channel-val {
+    font-size: 0.76rem;
+    overflow-wrap: anywhere;
+    word-break: break-all;
+  }
+  .contact-script-title {
+    font-size: 1.85rem;
+  }
+}
+
+.contact-info-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.contact-script-title {
+  font-family: var(--font-hand);
+  font-size: clamp(2.4rem, 4.5vw, 3.4rem);
+  color: var(--primary);
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+html[dir="rtl"] .contact-script-title {
+  font-family: var(--font-ar);
+  font-weight: 900;
+  font-size: clamp(2rem, 3.8vw, 2.8rem);
+}
+
+.contact-p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 30px;
+}
+
+.contact-channels-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.channel-item-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  transition: all var(--transition-fast);
+  min-width: 0;
+  max-width: 100%;
+}
+
+.channel-item-link:hover {
+  transform: translateX(6px);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-sm);
+}
+
+html[dir="rtl"] .channel-item-link:hover {
+  transform: translateX(-6px);
+}
+
+.channel-icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  flex-shrink: 0;
+}
+
+.channel-icon-email { background: linear-gradient(135deg, #8B5CF6, #6366F1); }
+.channel-icon-wa { background: #25D366; }
+.channel-icon-phone { background: linear-gradient(135deg, #3B82F6, #06B6D4); }
+.channel-icon-in { background: #0A66C2; }
+
+.channel-details {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.channel-label {
+  font-size: 0.74rem;
+  color: var(--text-subtle);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+}
+
+.channel-val {
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: var(--text-main);
+  overflow-wrap: anywhere;
+  word-break: break-all;
+}
+
+.contact-form-col {
+  background: var(--bg-glass-elevated);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-md);
+  min-width: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 500px) {
+  .contact-form-col {
+    padding: 20px 16px;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.form-input, .form-textarea {
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  font-size: 0.92rem;
+  transition: all var(--transition-fast);
+}
+
+.form-input:focus, .form-textarea:focus {
+  border-color: var(--primary);
+  background: var(--bg-glass-elevated);
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.form-textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+/* Modals & Lightbox (Native HTML5 <dialog> with Modern Web Guidance) */
+dialog:modal {
+  overscroll-behavior: contain;
+}
+
+dialog::backdrop {
+  overflow: hidden;
+  overscroll-behavior: contain;
+  background: rgba(10, 8, 21, 0.84);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+dialog.modal-dialog-backdrop,
+dialog.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  border: none;
+  background: transparent;
+  padding: 24px;
+  margin: auto;
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+dialog.lightbox-modal {
+  z-index: 3000;
+  padding: 30px;
+}
+
+dialog.lightbox-modal::backdrop {
+  background: rgba(5, 3, 12, 0.96);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+dialog[open].modal-dialog-backdrop,
+dialog[open].lightbox-modal,
+.modal-dialog-backdrop.open,
+.lightbox-modal.open {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-panel-card {
+  background: var(--bg-glass-elevated);
+  border: 1px solid var(--border-highlight);
+  border-radius: var(--radius-xl);
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-glow);
+  position: relative;
+  padding: 36px;
+}
+
+@media (max-width: 640px) {
+  .modal-panel-card {
+    padding: 24px 18px;
+  }
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+html[dir="rtl"] .modal-close-btn {
+  right: auto;
+  left: 20px;
+}
+
+.modal-close-btn:hover {
+  background: var(--primary);
+  color: #FFFFFF;
+}
+
+.modal-proof-img-wrap {
+  width: 100%;
+  margin: 20px 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-card);
+  box-shadow: var(--shadow-md);
+  background: #000000;
+}
+
+.modal-proof-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.lightbox-content-box {
+  position: relative;
+  max-width: 95vw;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightbox-full-img {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  box-shadow: 0 0 50px rgba(0,0,0,0.85);
+}
+
+.lightbox-caption {
+  color: #FFFFFF;
+  margin-top: 14px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Toast Notice */
+.toast-notice {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  background: var(--brand-gradient);
+  color: #FFFFFF;
+  padding: 12px 22px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-glow);
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 9999;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+html[dir="rtl"] .toast-notice {
+  right: auto;
+  left: 28px;
+}
+
+.toast-notice.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Back to Top Floating Button (Cleanly stacked above floating WhatsApp) */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 84px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(14px);
+  z-index: 998;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: all var(--transition-fast);
+}
+
+@media (max-width: 768px) {
+  .back-to-top-btn {
+    bottom: 80px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+html[dir="rtl"] .back-to-top-btn {
+  right: auto;
+  left: 24px;
+}
+
+@media (max-width: 768px) {
+  html[dir="rtl"] .back-to-top-btn {
+    left: 20px;
+  }
+}
+
+.back-to-top-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.back-to-top-btn:hover {
+  background: var(--primary);
+  color: #FFFFFF;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-glow);
+}
+
+/* Footer */
+.site-footer {
+  padding: 40px 0;
+  border-top: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+}
+
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-brand-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.footer-copy {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  white-space: normal;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+@media (max-width: 640px) {
+  .footer-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+.footer-signature {
+  font-family: var(--font-hand);
+  font-size: 1.45rem;
+  color: var(--primary);
+}
+
+html[dir="rtl"] .footer-signature {
+  font-family: var(--font-ar);
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+
+/* Scroll Reveal & Micro-Animations */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-item.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+</style>
 
   <!-- Schema.org JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -1373,6 +4679,1405 @@
   </button>
 
   <!-- Script -->
-  <script src="js/main.js"></script>
+  <script>
+/**
+ * Mariam Mohamed — Portfolio Main JavaScript
+ * Handles i18n (EN/AR), Live SERP Simulator, ROI Calculator, Case Modals, Lightbox, Counters, & 3D Tilt
+ */
+
+// ==========================================================================
+// Translation Dictionary (Bilingual EN / AR)
+// ==========================================================================
+
+const I18N_DATA = {
+  en: {
+    // Nav
+    "nav.about": "About",
+    "nav.results": "Results",
+    "nav.tools": "Tools",
+    "nav.cases": "Case Studies",
+    "nav.experience": "Experience",
+    "nav.skills": "Skills",
+    "nav.certs": "Certifications",
+    "nav.contact": "Contact",
+    "nav.cta": "Let's Talk",
+    "nav.status": "Available for Projects",
+
+    // Hero
+    "hero.location": "Mansoura, Egypt",
+    "hero.cta_work_mini": "Work with Mariam ↗",
+    "hero.eyebrow": "🚀 Grow Your Digital Presence",
+    "hero.requested_header": "SEO Specialist | ASO Specialist | E-commerce SEO | Technical SEO | Organic Growth",
+    "hero.name": "Mariam Mohamed",
+    "hero.title": "Data-Driven SEO & ASO Specialist Driving Explosive Organic Growth",
+    "hero.bio": "Specialized in search engine ranking algorithms, App Store Optimization (ASO), and e-commerce stores across Shopify, Salla, Zid, and WordPress. Equipped with a technical web development background to bridge search data, indexing, and technical site health.",
+    "hero.cta_work": "Explore Case Studies",
+    "hero.cta_contact": "Let's Grow Together",
+    "hero.cta_whatsapp": "WhatsApp Chat",
+    "hero.handwritten": "Let's Grow Together",
+    "hero.spec_seo": "SEO & ASO Specialist",
+    "hero.spec_aso": "App Store Optimization",
+    "hero.spec_ecom": "E-commerce SEO (Shopify/Salla/Zid)",
+    "hero.spec_tech": "Technical SEO & Web Architecture",
+    "hero.badge_rankings": "Higher Rankings",
+    "hero.badge_growth": "Organic Traffic Surge",
+
+    // Laptop Visual Mockup
+    "mockup.search_placeholder": "site:mariammohamed.dev/growth-case-studies",
+    "mockup.kpi_impressions": "Impressions",
+    "mockup.kpi_clicks": "Clicks",
+    "mockup.kpi_ctr": "Avg. CTR",
+    "mockup.kpi_pos": "Avg. Position",
+
+    // Platforms Ribbon
+    "ribbon.label": "Specialized Platforms & Tools",
+
+    // Selected Results (CV data)
+    "results.eyebrow": "Verified Evidence",
+    "results.title": "Proven Search & Revenue Performance",
+    "results.desc": "Real client data tracked via Google Search Console and Google Analytics 4 across high-stakes e-commerce, apps, and services.",
+    "stat.salla_title": "Salla Store",
+    "stat.salla_val": "63.6K",
+    "stat.salla_desc": "Organic impressions, 2.2K clicks & $255.97 generated revenue (35.8% of total).",
+    "stat.shopify_title": "Shopify Store",
+    "stat.shopify_val": "869",
+    "stat.shopify_desc": "Organic sessions with 67.63% engagement rate generating $198.99 in revenue.",
+    "stat.ecom1_title": "E-Commerce Month 1",
+    "stat.ecom1_val": "76.7%",
+    "stat.ecom1_desc": "Of total reported store revenue generated via organic search in first 30 days.",
+    "stat.ai_title": "AI Search Growth",
+    "stat.ai_val": "+70%",
+    "stat.ai_desc": "Surge in AI search impressions (437 → 745) and 4.31K total search impressions.",
+    "stat.aso_title": "App Store & Google Play",
+    "stat.aso_val": "6.1",
+    "stat.aso_desc": "Average ranking position for app landing page driving direct mobile downloads.",
+
+    // Interactive Tools
+    "tools.eyebrow": "Interactive Sandbox",
+    "tools.title": "Experience the SEO Advantage",
+    "tools.desc": "Test how your business appears in search results or estimate your potential organic revenue boost.",
+    "tab.serp": "Live SERP & ASO Simulator",
+    "tab.roi": "Organic ROI Calculator",
+
+    // Simulator
+    "sim.presets_label": "Choose a Scenario Preset:",
+    "sim.preset_shopify": "Shopify Fashion Store",
+    "sim.preset_salla": "Salla Natural Oils Store",
+    "sim.preset_app": "Mobile App (Play & App Store)",
+    "sim.preset_invest": "Investment & AI Search Portal",
+    "sim.title_label": "Page Title Tag (<title>)",
+    "sim.url_label": "Target URL / Breadcrumbs",
+    "sim.desc_label": "Meta Description",
+    "sim.device_desktop": "Desktop",
+    "sim.device_mobile": "Mobile",
+
+    // Calculator
+    "calc.traffic_label": "Current Monthly Organic Visitors:",
+    "calc.aov_label": "Average Order Value ($):",
+    "calc.growth_label": "Target Organic Traffic Growth:",
+    "calc.cr_label": "Store Conversion Rate (%):",
+    "calc.roi_badge": "Projected Growth Potential",
+    "calc.roi_new_rev": "Projected Additional Annual Revenue",
+    "calc.new_visitors": "Additional Monthly Visitors",
+    "calc.new_orders": "Estimated New Monthly Orders",
+    "calc.cta": "Claim Your Custom Growth Plan on WhatsApp",
+
+    // Cases
+    "cases.eyebrow": "Case Studies",
+    "cases.title": "Documented Impact & Case Proofs",
+    "cases.desc": "Every metric is verifiable with raw Search Console and GA4 analytics exports.",
+    "filter.all": "All Cases",
+    "filter.ecom": "E-commerce SEO",
+    "filter.aso": "ASO & App Pages",
+    "filter.ai": "AI & Web Search",
+    "cases.view_details": "View Full Proof & Strategy",
+
+    // Experience
+    "exp.eyebrow": "Career Journey",
+    "exp.title": "Professional Experience",
+    "exp.desc": "Proven track record executing end-to-end SEO, ASO, and analytics tracking.",
+    "exp.aait_role": "SEO Specialist",
+    "exp.aait_company": "Awamer Alshabaka (AAIT)",
+    "exp.aait_date": "July 2026 – Present",
+    "exp.aait_b1": "Develop and execute data-driven SEO strategies for service-based and product-based websites.",
+    "exp.aait_b2": "Lead App Store Optimization (ASO) for mobile applications across Google Play Store and Apple App Store.",
+    "exp.aait_b3": "Optimize high-converting app landing pages to boost organic indexing and maximize app download conversions.",
+    "exp.aait_b4": "Execute in-depth keyword architecture, search intent clustering, and competitor gap analysis.",
+    "exp.aait_b5": "Monitor search trends, index status, and user behavior data to iterate on optimization opportunities.",
+
+    "exp.azraq_role": "SEO & E-commerce Specialist (Full-time)",
+    "exp.azraq_company": "Azraq",
+    "exp.azraq_date": "9 Months",
+    "exp.azraq_b1": "Managed on-page and technical SEO strategies across multiple platforms: Shopify, WordPress, Salla, and Zid.",
+    "exp.azraq_b2": "Conducted competitor benchmarking and keyword opportunity research to dominate high-intent buying queries.",
+    "exp.azraq_b3": "Implemented advanced conversion tracking, enhanced ecommerce events, and custom triggers via Google Tag Manager.",
+    "exp.azraq_b4": "Delivered technical audits resolving crawl errors, canonical duplicates, schema issues, and speed bottlenecks.",
+
+    // Skills
+    "skills.eyebrow": "Capabilities",
+    "skills.title": "Technical SEO & Tool Stack",
+    "skills.desc": "A rare blend of search algorithm knowledge, conversion tracking, and front-end development capabilities.",
+    "cluster.seo": "Search Engine Optimization (SEO)",
+    "cluster.aso": "App Store Optimization (ASO)",
+    "cluster.platforms": "E-Commerce & CMS Platforms",
+    "cluster.tech": "Technical & Web Development",
+
+    // Certifications & Education
+    "certs.eyebrow": "Credentials",
+    "certs.title": "Certifications & Education",
+    "certs.desc": "Certified by world-leading SEO platforms and holding an academic degree in Management Information Systems.",
+    "cert1.title": "SEO Essentials with Semrush",
+    "cert1.issuer": "Semrush Academy",
+    "cert1.validity": "Valid through 21 April 2027",
+    "cert2.title": "Semrush SEO Crash Course with Brian Dean",
+    "cert2.issuer": "Semrush Academy",
+    "cert2.validity": "Brian Dean / Semrush Verified",
+    "edu.title": "Bachelor's Degree in Management Information Systems (MIS)",
+    "edu.sub": "Higher Institute for Computers and Management Information Systems",
+    "edu.grade": "Grade: Excellent with Distinction (ممتاز)",
+
+    // FAQ
+    "faq.eyebrow": "Common Questions",
+    "faq.title": "Frequently Asked Questions",
+    "faq.q1": "How quickly can we expect to see results from SEO?",
+    "faq.a1": "While full domain authority builds over 3-6 months, targeted optimizations for existing websites can show measurable ranking and impression jumps in as little as 2-4 weeks—as shown in our Month 1 E-commerce case study where organic search generated 76.7% of store revenue within 30 days.",
+    "faq.q2": "What platforms do you work with for e-commerce SEO?",
+    "faq.a2": "I specialize in the leading Arab and global platforms: Salla (سلة), Zid (زد), Shopify, WooCommerce, and custom WordPress setups. Each platform has specific canonical, metadata, and schema nuances that I tune for maximum indexing speed.",
+    "faq.q3": "How does App Store Optimization (ASO) complement SEO?",
+    "faq.a3": "SEO captures high-intent web searchers on Google and guides them to an optimized app landing page, while ASO optimizes your app's title, subtitle, keywords field, screenshots, and conversion rate directly on Google Play and Apple App Store for compound organic downloads.",
+    "faq.q4": "How does your technical development background help my SEO?",
+    "faq.a4": "Unlike purely content-focused SEOs, my knowledge of HTML, CSS, JavaScript, and Flutter allows me to inspect DOM rendering, diagnose Core Web Vitals, fix JavaScript indexing barriers, and write custom Schema markup directly.",
+
+    // Contact
+    "contact.eyebrow": "Let's Connect",
+    "contact.handwritten": "Let's Grow Together",
+    "contact.title": "Ready to scale your organic search revenue?",
+    "contact.desc": "Whether you are running an e-commerce brand on Salla or Shopify, launching a mobile app, or scaling a service business, let's build an organic engine that prints sustainable results.",
+    "contact.location": "Mansoura, Egypt",
+    "contact.cv_btn": "Download Official CV (PDF)",
+    "form.name": "Your Name / Company",
+    "form.email": "Email Address",
+    "form.phone": "WhatsApp / Phone Number",
+    "form.platform": "Store / Platform / App Type",
+    "form.msg": "Project Details & Goals",
+    "form.submit": "Send Message via WhatsApp",
+    "form.copy_email": "Copy Email Address",
+    "toast.copied": "Email copied to clipboard!",
+    "wa.quick_chat": "Chat on WhatsApp",
+    "footer.rights": "Mariam Mohamed. All rights reserved. Specialized in SEO, ASO & Organic Growth."
+  },
+
+  ar: {
+    // Nav
+    "nav.about": "نبذة",
+    "nav.results": "النتائج",
+    "nav.tools": "الأدوات",
+    "nav.cases": "دراسات الحالة",
+    "nav.experience": "الخبرات",
+    "nav.skills": "المهارات",
+    "nav.certs": "الشهادات",
+    "nav.contact": "تواصل معي",
+    "nav.cta": "لنبدأ العمل",
+    "nav.status": "متاحة للمشاريع الجديدة",
+
+    // Hero
+    "hero.location": "المنصورة، مصر",
+    "hero.cta_work_mini": "ابدأ التعاون مع مريم ↗",
+    "hero.eyebrow": "🚀 طوّر حضورك الرقمي",
+    "hero.requested_header": "SEO Specialist | ASO Specialist | E-commerce SEO | Technical SEO | Organic Growth",
+    "hero.name": "مريم محمد",
+    "hero.title": "أخصائية سيو ونمو عضوي | تصدّر نتائج البحث ومتاجر التطبيقات",
+    "hero.bio": "متخصصة في خوارزميات محركات البحث، وتحسين متاجر التطبيقات (ASO)، ومتاجر التجارة الإلكترونية عبر شوبيفاي، سلة، زد، وووردبريس. مدعومة بخلفية تقنية في تطوير الويب والبرمجة لفهم دقيق للبيانات، وسرعة الفهرسة، والصحة التقنية للمواقع.",
+    "hero.cta_work": "استكشف دراسات الحالة",
+    "hero.cta_contact": "معاً نحو نمو مستمر",
+    "hero.cta_whatsapp": "محادثة واتساب سريعة",
+    "hero.handwritten": "معاً نحو نمو مستمر",
+    "hero.spec_seo": "أخصائية سيو ونمو عضوي",
+    "hero.spec_aso": "تحسين متاجر التطبيقات (ASO)",
+    "hero.spec_ecom": "سيو المتاجر (شوبيفاي / سلة / زد)",
+    "hero.spec_tech": "السيو التقني وهندسة الويب",
+    "hero.badge_rankings": "ترتيب متقدم في جوجل",
+    "hero.badge_growth": "قفزة في الزيارات العضوية",
+
+    // Laptop Visual Mockup
+    "mockup.search_placeholder": "site:mariammohamed.dev/growth-case-studies",
+    "mockup.kpi_impressions": "مرات الظهور",
+    "mockup.kpi_clicks": "النقرات",
+    "mockup.kpi_ctr": "متوسط CTR",
+    "mockup.kpi_pos": "متوسط الترتيب",
+
+    // Platforms Ribbon
+    "ribbon.label": "أبرز المنصات والأدوات المعتمدة",
+
+    // Selected Results (CV data)
+    "results.eyebrow": "أدلة موثقة بالأرقام",
+    "results.title": "نتائج حقيقية في الزيارات والإيرادات",
+    "results.desc": "بيانات دقيقة مسجلة من واقع Google Search Console وGoogle Analytics 4 لمشاريع تجارة إلكترونية، تطبيقات جوال، ومواقع خدمية.",
+    "stat.salla_title": "متجر سلة",
+    "stat.salla_val": "63.6K",
+    "stat.salla_desc": "ظهور عضوي، و2.2K نقرة، ومبيعات بقيمة $255.97 تشكل 35.8% من إجمالي الإيرادات.",
+    "stat.shopify_title": "متجر شوبيفاي",
+    "stat.shopify_val": "869",
+    "stat.shopify_desc": "جلسة بحث عضوي بمعدل تفاعل 67.63% وحققت $198.99 من الإيرادات المسجلة.",
+    "stat.ecom1_title": "متجر إلكتروني (الشهر الأول)",
+    "stat.ecom1_val": "76.7%",
+    "stat.ecom1_desc": "من إجمالي مبيعات المتجر تحققت بفضل السيو العضوي خلال أول 30 يوماً فقط.",
+    "stat.ai_title": "نمو البحث بالذكاء الاصطناعي",
+    "stat.ai_val": "+70%",
+    "stat.ai_desc": "زيادة في ظهور البحث بالذكاء الاصطناعي (من 437 إلى 745) وإجمالي 4.31K ظهور.",
+    "stat.aso_title": "صفحة هبوط التطبيق (Play & App Store)",
+    "stat.aso_val": "6.1",
+    "stat.aso_desc": "متوسط ترتيب لصفحة التطبيق على جوجل خلال 28 يوماً لدفع تحميلات الجوال.",
+
+    // Interactive Tools
+    "tools.eyebrow": "مختبر تفاعلي حي",
+    "tools.title": "جرّب قوة السيو بالأدلة الحية",
+    "tools.desc": "شاهد كيف تظهر نتيجتك في محرك البحث، أو احسب العائد المالي المتوقع لمتجرك من الزيارات العضوية.",
+    "tab.serp": "محاكي نتائج بحث جوجل وASO",
+    "tab.roi": "حاسبة العائد الاستثماري (ROI)",
+
+    // Simulator
+    "sim.presets_label": "اختر نموذجاً جاهزاً للتجربة:",
+    "sim.preset_shopify": "متجر أزياء شوبيفاي",
+    "sim.preset_salla": "متجر زيوت طبيعية على سلة",
+    "sim.preset_app": "تطبيق جوال (Play & App Store)",
+    "sim.preset_invest": "موقع خدمات استثمارية وذكاء اصطناعي",
+    "sim.title_label": "عنوان الصفحة (<title>)",
+    "sim.url_label": "رابط الصفحة والمسار (URL)",
+    "sim.desc_label": "الوصف التعريفي (Meta Description)",
+    "sim.device_desktop": "كمبيوتر",
+    "sim.device_mobile": "جوال",
+
+    // Calculator
+    "calc.traffic_label": "الزيارات العضوية الشهرية الحالية:",
+    "calc.aov_label": "متوسط قيمة الطلب الواحد ($):",
+    "calc.growth_label": "نسبة النمو العضوي المستهدفة:",
+    "calc.cr_label": "معدل تحويل المتجر (%):",
+    "calc.roi_badge": "فرصة النمو المالي المتوقعة",
+    "calc.roi_new_rev": "الإيرادات السنوية الإضافية المتوقعة",
+    "calc.new_visitors": "زيارات شهرية إضافية",
+    "calc.new_orders": "طلبات شراء جديدة شهرياً",
+    "calc.cta": "ناقش خطة نمو متجرك عبر واتساب الآن",
+
+    // Cases
+    "cases.eyebrow": "دراسات الحالة",
+    "cases.title": "أثر ملموس مدعوم بتقارير رسمية",
+    "cases.desc": "كل رقم هنا موثق بلقطات أصلية وبيانات حقيقية من منصات التحليلات.",
+    "filter.all": "جميع المشاريع",
+    "filter.ecom": "سيو المتاجر",
+    "filter.aso": "التطبيقات وASO",
+    "filter.ai": "الذكاء الاصطناعي والويب",
+    "cases.view_details": "عرض التقرير الكامل والأدلة",
+
+    // Experience
+    "exp.eyebrow": "المسيرة المهنية",
+    "exp.title": "الخبرات العملية",
+    "exp.desc": "سجل مهني حافل بتنفيذ حملات سيو، تحسين ASO، وإعداد نظم تتبع دقيقة للتحويلات.",
+    "exp.aait_role": "أخصائية سيو (SEO Specialist)",
+    "exp.aait_company": "أوامر الشبكة (Awamer Alshabaka - AAIT)",
+    "exp.aait_date": "يوليو 2026 – حتى الآن",
+    "exp.aait_b1": "تطوير وتنفيذ استراتيجيات السيو الشاملة للمواقع الخدمية والتجارية وتتبع نمو الكلمات التنافسية.",
+    "exp.aait_b2": "قيادة تحسين متاجر التطبيقات (ASO) على Google Play وApple App Store لزيادة التحميلات العضوية.",
+    "exp.aait_b3": "تحسين صفحات هبوط التطبيقات لجذب المستخدمين المؤهلين من جوجل مباشرة وتحويلهم لمستخدمين.",
+    "exp.aait_b4": "إجراء بحوث دقيقة للكلمات المفتاحية وتحليل ثغرات المنافسين لتصدر الفرص الذهبية.",
+    "exp.aait_b5": "تحليل مؤشرات الأداء والبيانات لتحديد فرص التحسين المستمرة ومواكبة تحديثات جوجل.",
+
+    "exp.azraq_role": "أخصائية سيو وتجارة إلكترونية (دوام كامل)",
+    "exp.azraq_company": "أزرق (Azraq)",
+    "exp.azraq_date": "9 أشهر",
+    "exp.azraq_b1": "إدارة وتحسين المتاجر الإلكترونية على منصات: شوبيفاي، ووردبريس، سلة، وزد لتحسين الظهور البيعي.",
+    "exp.azraq_b2": "تنفيذ استراتيجيات السيو الداخلي (On-page) وتحسين الأوصاف وبنية المنتجات للكلمات الشرائية.",
+    "exp.azraq_b3": "إعداد وتتبع أحداث التحويل (Conversion Tracking) عبر Google Tag Manager وGoogle Analytics 4.",
+    "exp.azraq_b4": "حل المشكلات التقنية للفهرسة والروابط المكسورة وتحسين تجربة المستخدم وسرعة المتجر.",
+
+    // Skills
+    "skills.eyebrow": "القدرات الفنية",
+    "skills.title": "منظومة السيو والأدوات التقنية",
+    "skills.desc": "مزيج يجمع بين فهم خوارزميات البحث، أدوات التحليل المتقدمة، وأساسيات التطوير البرمجي.",
+    "cluster.seo": "تحسين محركات البحث (SEO)",
+    "cluster.aso": "تحسين متاجر التطبيقات (ASO)",
+    "cluster.platforms": "منصات التجارة والمحتوى",
+    "cluster.tech": "التطوير والتقنيات البرمجية",
+
+    // Certifications & Education
+    "certs.eyebrow": "الاعتمادات العلمية",
+    "certs.title": "الشهادات الأكاديمية والمهنية",
+    "certs.desc": "شهادات معتمدة دولياً من منصات رائدة، إلى جانب بكالوريوس نظم المعلومات الإدارية بتقدير ممتاز.",
+    "cert1.title": "أساسيات السيو مع سيمرش (Semrush Essentials)",
+    "cert1.issuer": "أكاديمية سيمرش (Semrush Academy)",
+    "cert1.validity": "سارية حتى 21 أبريل 2027",
+    "cert2.title": "الدورة المكثفة في السيو مع برايان دين (Brian Dean)",
+    "cert2.issuer": "أكاديمية سيمرش (Semrush Academy)",
+    "cert2.validity": "معتمدة من الخبير العالمي برايان دين",
+    "edu.title": "بكالوريوس في نظم المعلومات الإدارية (MIS)",
+    "edu.sub": "المعهد العالي للحاسبات ونظم المعلومات الإدارية",
+    "edu.grade": "التقدير: ممتاز مع مرتبة الشرف (Distinction)",
+
+    // FAQ
+    "faq.eyebrow": "أسئلة شائعة",
+    "faq.title": "إجابات على أكثر ما يسأل عنه العملاء",
+    "faq.q1": "كم من الوقت نحتاج لملاحظة نتائج السيو؟",
+    "faq.a1": "بناء السلطة الشاملة للموقع يحتاج من 3 إلى 6 أشهر، لكن التحسينات المدروسة للمتاجر الحالية تبدأ بإظهار قفزات واضحة في الظهور والنقرات خلال 2 إلى 4 أسابيع، تماماً كما حدث في دراسة حالة متجرنا حيث حقق السيو 76.7% من المبيعات في أول 30 يوماً.",
+    "faq.q2": "ما هي منصات المتاجر التي تعملين عليها؟",
+    "faq.a2": "أعمل باحترافية على منصات التجارة الإلكترونية الأكثر انتشاراً: سلة، زد، شوبيفاي، وووردبريس (WooCommerce). لكل منصة إعدادات خاصة للميتاداتا وبنية الروابط وبيانات المنتجات (Schema) أتقن ضبطها لسرعة الأرشفة.",
+    "faq.q3": "كيف يدعم السيو تحسين متاجر التطبيقات (ASO)؟",
+    "faq.a3": "السيو يجلب مستخدمين يبحثون عن حلول محددة على جوجل ويوجههم لصفحة هبوط محسنة، بينما يضمن ASO ظهور التطبيق في قمة متجري Google Play وApp Store، فيتكامل المصدران لمضاعفة التحميلات بأقل تكلفة.",
+    "faq.q4": "ما ميزة وجود خلفية برمجية وتقنية لدى أخصائي السيو؟",
+    "faq.a4": "الخلفية البرمجية في HTML وCSS وJavaScript وFlutter تمكنني من كشف عوائق الزحف والأرشفة في كود الموقع مباشرة، وحل مشكلات سرعة التحميل (Core Web Vitals)، وإضافة أكواد Schema المعقدة بدون انتظار مطور خارجي.",
+
+    // Contact
+    "contact.eyebrow": "تواصل معي",
+    "contact.handwritten": "معاً نحو نمو مستمر",
+    "contact.title": "هل أنت مستعد لمضاعفة مبيعاتك العضوية؟",
+    "contact.desc": "سواء كنت تدير متجراً على سلة أو شوبيفاي، أو تطلق تطبيق جوال جديد، أو تبحث عن تصدر الكلمات الخدمية، فلنبدأ معاً استراتيجية تصنع لك نمواً مستداماً.",
+    "contact.location": "المنصورة، مصر",
+    "contact.cv_btn": "تحميل السيرة الذاتية الرسمية (PDF)",
+    "form.name": "الاسم / اسم النشاط التجاري",
+    "form.email": "البريد الإلكتروني",
+    "form.phone": "رقم الواتساب / الهاتف",
+    "form.platform": "منصة المتجر أو نوع التطبيق",
+    "form.msg": "تفاصيل المشروع والأهداف المستهدفة",
+    "form.submit": "إرسال التفاصيل عبر واتساب",
+    "form.copy_email": "نسخ البريد الإلكتروني",
+    "toast.copied": "تم نسخ البريد الإلكتروني بنجاح!",
+    "wa.quick_chat": "محادثة عبر واتساب",
+    "footer.rights": "مريم محمد. جميع الحقوق محفوظة. متخصصة في خدمات السيو و ASO والنمو العضوي."
+  }
+};
+
+// ==========================================================================
+// Verified Case Studies Data (Loaded with Extracted Assets)
+// ==========================================================================
+
+const CASE_STUDIES = [
+  {
+    id: "shopify",
+    category: "ecom",
+    platform: "Shopify",
+    title_en: "Shopify E-commerce SEO Growth",
+    title_ar: "سيو متجر شوبيفاي وزيادة المبيعات",
+    desc_en: "Organic search optimization and buyer-intent keyword targeting for a Shopify e-commerce brand.",
+    desc_ar: "تحسين البحث العضوي واستهداف الكلمات الشرائية لمتجر تجارة إلكترونية على منصة شوبيفاي.",
+    industry_en: "E-commerce & Retail",
+    industry_ar: "تجارة إلكترونية وتجزئة",
+    period_en: "Documented Milestone",
+    period_ar: "فترة قياسية مسجلة",
+    img: "assets/proofs/case-shopify.webp",
+    metrics: [
+      { label_en: "Organic Sessions", label_ar: "جلسات عضوية", val: "869" },
+      { label_en: "Engagement Rate", label_ar: "معدل التفاعل", val: "67.63%" },
+      { label_en: "Organic Revenue", label_ar: "إيرادات السيو", val: "$198.99" },
+      { label_en: "Revenue Share", label_ar: "نسبة الإيراد", val: "26.23%" },
+      { label_en: "Impressions", label_ar: "مرات الظهور", val: "47.3K" },
+      { label_en: "Clicks", label_ar: "النقرات", val: "1.73K" }
+    ],
+    strategy_en: [
+      "Targeted high-intent transactional search queries for product collections.",
+      "Optimized Shopify meta tags, product titles, and JSON-LD product schema.",
+      "Fixed pagination indexing issues and collection filter crawl bloat.",
+      "Tracked revenue attribution and checkout events via Google Tag Manager & GA4."
+    ],
+    strategy_ar: [
+      "استهداف الكلمات المفتاحية الشرائية ذات نية الشراء العالية للمنتجات والأقسام.",
+      "تحسين الميتاداتا وعناوين المنتجات على شوبيفاي وتطبيق Schema Products المتقدمة.",
+      "معالجة مشاكل فهرسة الصفحات وفلاتر الأقسام لتوفير ميزانية الزحف.",
+      "تتبع عوائد السيو ومسار الشراء داخل المتجر عبر Google Tag Manager وGA4."
+    ]
+  },
+  {
+    id: "salla",
+    category: "ecom",
+    platform: "Salla (سلة)",
+    title_en: "Salla Store: 63.6K Impressions & Dominant Rankings",
+    title_ar: "متجر سلة: 63.6K ظهور وتصدر كلمات العناية بالبشرة والشعر",
+    desc_en: "Scaling organic visibility for a high-volume Salla store selling natural oils and body care.",
+    desc_ar: "مضاعفة الظهور العضوي لمتجر على سلة متخصص في زيوت العناية الطبيعية والشعر.",
+    industry_en: "Health & Beauty",
+    industry_ar: "العناية والصحة والجمال",
+    period_en: "Active Growth Campaign",
+    period_ar: "حملة نمو نشطة",
+    img: "assets/proofs/case-salla.webp",
+    metrics: [
+      { label_en: "Total Impressions", label_ar: "إجمالي الظهور", val: "63.6K" },
+      { label_en: "Clicks", label_ar: "النقرات", val: "2.2K" },
+      { label_en: "Avg. Position", label_ar: "متوسط الترتيب", val: "9.2" },
+      { label_en: "Generated Revenue", label_ar: "مبيعات السيو", val: "$255.97" },
+      { label_en: "Organic Sessions", label_ar: "جلسات السيو", val: "779" },
+      { label_en: "Revenue Share", label_ar: "نسبة المبيعات", val: "35.86%" }
+    ],
+    strategy_en: [
+      "Engineered comprehensive topical authority around natural beauty and hair care oils.",
+      "Implemented tailored Salla platform SEO adjustments, SEO title rewrites, and alt tags.",
+      "Captured answer box snippets and image search results across Saudi Arabia & GCC.",
+      "Monitored key purchase events, add-to-cart clicks, and average CTR optimization."
+    ],
+    strategy_ar: [
+      "بناء سلطة موضوعية (Topical Authority) شاملة حول زيوت العناية الطبيعية وتغذية الشعر.",
+      "تطبيق تعديلات متخصصة لمتجر سلة، وإعادة كتابة عناوين السيو، وضبط نصوص الصور البديلة.",
+      "تصدر نتائج البحث المميزة (Snippets) ونتائج بحث الصور في السعودية ودول الخليج.",
+      "متابعة دقيقة لأحداث الإضافة للسلة ونمو نسبة النقر إلى الظهور (CTR)."
+    ]
+  },
+  {
+    id: "ecom-month1",
+    category: "ecom",
+    platform: "E-Commerce",
+    title_en: "Fast-Track SEO: 76.7% Revenue Share in Month 1",
+    title_ar: "سيو سريع: 76.7% من مبيعات المتجر في الشهر الأول",
+    desc_en: "Rapid indexation and high-converting keyword rankings delivering immediate revenue for a new e-commerce store.",
+    desc_ar: "أرشفة فورية وتصدر سريع لكلمات شرائية حققت عائداً مباشراً لمتجر جديد خلال أول 30 يوماً.",
+    industry_en: "E-commerce Startup",
+    industry_ar: "انطلاقة متجر تجارة إلكترونية",
+    period_en: "First 30 Days Launch",
+    period_ar: "أول 30 يوماً من الإطلاق",
+    img: "assets/proofs/case-ecom-month1.png",
+    metrics: [
+      { label_en: "Revenue Share", label_ar: "نسبة مبيعات السيو", val: "76.73%" },
+      { label_en: "Month 1 Revenue", label_ar: "مبيعات الشهر الأول", val: "SAR 564" },
+      { label_en: "Engagement Rate", label_ar: "معدل التفاعل", val: "100%" },
+      { label_en: "Search Impressions", label_ar: "مرات الظهور", val: "822" },
+      { label_en: "Average Position", label_ar: "متوسط الترتيب", val: "18.3" }
+    ],
+    strategy_en: [
+      "Focused on low-competition, high-conversion long-tail keyword clusters.",
+      "Constructed lean technical setup ensuring immediate Google bot crawl and indexing.",
+      "Crafted persuasive title tags and compelling meta descriptions maximizing initial CTR.",
+      "Established baseline conversion tracking in GA4 to prove organic search attribution."
+    ],
+    strategy_ar: [
+      "التركيز على الكلمات الطويلة (Long-tail keywords) منخفضة المنافسة وعالية التحويل.",
+      "بنية تقنية خفيفة وسريعة ضمنت زحف روبوتات جوجل وأرشفة الصفحات فورياً.",
+      "صياغة عناوين وأوصاف تحفيزية جذابة ضاعفت نسبة النقر ومعدل الشراء منذ اليوم الأول.",
+      "تأسيس نظام تتبع كامل في GA4 أثبت أن السيو كان المصدر الأكبر لمبيعات المتجر."
+    ]
+  },
+  {
+    id: "app-landing",
+    category: "aso",
+    platform: "Google Play & App Store",
+    title_en: "App Landing Page ASO: 6.1 Avg Ranking",
+    title_ar: "سيو وASO لصفحة هبوط تطبيق: متوسط ترتيب 6.1",
+    desc_en: "Optimizing an app landing page to rank on Google search and funnel qualified organic users to download on App Store & Google Play.",
+    desc_ar: "تحسين صفحة هبوط التطبيق لتتصدر نتائج بحث جوجل وتوجه المستخدمين لتحميل التطبيق مباشرة من متاجر التطبيقات.",
+    industry_en: "Mobile App & Tech",
+    industry_ar: "تطبيقات الهواتف الذكية",
+    period_en: "28 Days Performance",
+    period_ar: "أداء 28 يوماً",
+    img: "assets/proofs/case-app-landing.png",
+    metrics: [
+      { label_en: "Avg. Ranking Position", label_ar: "متوسط الترتيب", val: "6.1" },
+      { label_en: "Impressions", label_ar: "مرات الظهور", val: "3.63K" },
+      { label_en: "App Store Clicks", label_ar: "نقرات التحميل", val: "70" },
+      { label_en: "Average CTR", label_ar: "متوسط CTR", val: "1.9%" }
+    ],
+    strategy_en: [
+      "Engineered app landing page schema with SoftwareApplication & MobileApplication tags.",
+      "Aligned web keywords with Google Play Store & Apple App Store search terms.",
+      "Designed clear app download CTA funnels with deep links to mobile app stores.",
+      "Monitored fast crawler indexation and mobile usability benchmarks."
+    ],
+    strategy_ar: [
+      "تطبيق أكواد Schema المتخصصة للتطبيقات (SoftwareApplication وMobileApplication).",
+      "مواءمة الكلمات المفتاحية في صفحة الويب مع مصطلحات البحث داخل متجري جوجل بلاي وآب ستور.",
+      "تصميم مسار تحويل واضح مع روابط ذكية توجه الزوار مباشرة لصفحة التحميل المناسبة لنظام هواتفهم.",
+      "متابعة سرعة الأرشفة ومعايير التوافق التام مع تجربة مستخدمي الهواتف الذكية."
+    ]
+  },
+  {
+    id: "invest-ai",
+    category: "ai",
+    platform: "Website / Web Portal",
+    title_en: "Investment Services: +70% AI Search Visibility",
+    title_ar: "موقع خدمات استثمارية: نمو 70% في ظهور الذكاء الاصطناعي",
+    desc_en: "Growing organic authority and capturing new AI-driven search overviews and generative search results.",
+    desc_ar: "بناء السلطة الرقمية وتصدر نتائج البحث المعتمدة على الذكاء الاصطناعي (AI Search / Overviews).",
+    industry_en: "Financial & Investment Services",
+    industry_ar: "خدمات مالية واستثمارية",
+    period_en: "28 Days Comparison",
+    period_ar: "مقارنة 28 يوماً",
+    img: "assets/proofs/case-invest-ai.png",
+    metrics: [
+      { label_en: "AI Search Growth", label_ar: "نمو ظهور الذكاء الاصطناعي", val: "+70%" },
+      { label_en: "AI Impressions", label_ar: "ظهور AI (السابق 437)", val: "745" },
+      { label_en: "Total Impressions", label_ar: "إجمالي الظهور (السابق 2.66K)", val: "4.31K" },
+      { label_en: "Click Growth", label_ar: "نمو النقرات", val: "50 Clicks" }
+    ],
+    strategy_en: [
+      "Structured content for LLM / AI Search ingestion with clear entity definitions.",
+      "Implemented comprehensive FAQ, financial schema, and author authority markers.",
+      "Surged AI search impressions from 437 to 745 in 28 days (+70% boost).",
+      "Grew total search impressions by over 62% from 2.66K to 4.31K."
+    ],
+    strategy_ar: [
+      "تنظيم وهندسة المحتوى ليتوافق مع نماذج الذكاء الاصطناعي ومحركات البحث التوليدية.",
+      "تطبيق Schema متقدمة للخدمات المالية والأسئلة الشائعة وتأكيد هوية وخبرة الموقع.",
+      "قفزة في ظهور نتائج البحث بالذكاء الاصطناعي من 437 إلى 745 خلال 28 يوماً (+70%).",
+      "زيادة إجمالي ظهور الموقع بنسبة تتجاوز 62% من 2.66K إلى 4.31K ظهور."
+    ]
+  }
+];
+
+// ==========================================================================
+// Simulator Presets
+// ==========================================================================
+
+const SIMULATOR_PRESETS = {
+  shopify: {
+    title: "Luxury Modest Fashion & Abayas | Fast Worldwide Shipping | Mariam Mohamed SEO",
+    url: "https://www.modestluxury.com › collections › abayas",
+    desc: "Discover exclusive luxury abayas and evening modest dresses tailored with premium silk. Enjoy free express shipping and easy returns. Ranked #1 for buyer queries.",
+    rating: "4.9",
+    reviews: "1,248"
+  },
+  salla: {
+    title: "متجر الزيوت الطبيعية للعناية بالشعر والبشرة | توصيل سريع للسعودية والخليج",
+    url: "https://salla.sa/natural-oils › products › hair-growth",
+    desc: "تسوق أفضل الزيوت الطبيعية الأصلية 100% لتكثيف وتغذية الشعر وعلاج التقصف. نتائج مضمونة وعروض حصرية مع شحن سريع لكافة مناطق المملكة والخليج.",
+    rating: "4.8",
+    reviews: "892"
+  },
+  app: {
+    title: "Daily Fitness & Workout Tracker App | Download on Google Play & App Store",
+    url: "https://fitpulse.app › download-mobile-app",
+    desc: "Transform your fitness with AI personal coaching and custom workout plans. Over 500,000 active athletes. Download free now on Apple App Store & Google Play.",
+    rating: "4.9",
+    reviews: "3,640"
+  },
+  invest: {
+    title: "Smart Global Investment Strategies & Wealth Advisory | Certified Experts",
+    url: "https://investpeak.com › global-wealth-management",
+    desc: "Maximize wealth growth with data-backed asset allocation, AI market insights, and tailored portfolios for institutions and high-net-worth individuals.",
+    rating: "5.0",
+    reviews: "410"
+  }
+};
+
+// ==========================================================================
+// State Management (Pure Light Mode)
+// ==========================================================================
+
+let currentLang = 'en';
+let activeCaseFilter = 'all';
+
+// ==========================================================================
+// Initialization
+// ==========================================================================
+
+document.addEventListener('DOMContentLoaded', () => {
+  initLightMode();
+  initLanguage();
+  renderCaseStudies();
+  initScrollEffects();
+  initSimulator();
+  initRoiCalculator();
+  initModals();
+  initTiltEffect();
+  initCounters();
+  initFaqAccordion();
+  initTypewriter();
+  initHeroParallax();
+  initScrollAnimations();
+});
+
+function initLightMode() {
+  document.documentElement.setAttribute('data-theme', 'light');
+  localStorage.removeItem('mm-theme');
+  localStorage.removeItem('portfolio_theme');
+}
+
+// ==========================================================================
+// Active Typewriter Animation (Laptop Mockup)
+// ==========================================================================
+
+function initTypewriter() {
+  const queryEl = document.getElementById('hero-search-query');
+  if (!queryEl) return;
+
+  const queries = [
+    "Shopify e-commerce organic growth...",
+    "Salla store SEO +63.6K impressions...",
+    "Mobile app ASO keywords rank #1...",
+    "Technical SEO & site speed 99...",
+    "High-intent commercial keywords..."
+  ];
+
+  let queryIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function typeStep() {
+    const currentQuery = queries[queryIndex];
+    if (isDeleting) {
+      charIndex--;
+      queryEl.textContent = currentQuery.substring(0, charIndex);
+    } else {
+      charIndex++;
+      queryEl.textContent = currentQuery.substring(0, charIndex);
+    }
+
+    let delay = isDeleting ? 35 : 75;
+
+    if (!isDeleting && charIndex === currentQuery.length) {
+      delay = 2200; // pause at end
+      isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      queryIndex = (queryIndex + 1) % queries.length;
+      delay = 400; // pause before typing next
+    }
+
+    setTimeout(typeStep, delay);
+  }
+
+  typeStep();
+}
+
+// ==========================================================================
+// 3D Spatial Hero Parallax Physics
+// ==========================================================================
+
+function initHeroParallax() {
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  const stage = document.querySelector('.hero-visual-stage');
+  const laptop = document.getElementById('hero-laptop-card');
+  const badgeTop = document.querySelector('.badge-top-right');
+  const badgeBottom = document.querySelector('.badge-bottom-left');
+  if (!stage || !laptop) return;
+
+  stage.addEventListener('mousemove', (e) => {
+    const rect = stage.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+
+    const rotX = (y / (rect.height / 2)) * -9;
+    const rotY = (x / (rect.width / 2)) * 11;
+
+    laptop.style.transform = `perspective(1200px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.02)`;
+    if (badgeTop) {
+      badgeTop.style.transform = `translate(${x * 0.08}px, ${y * 0.08}px) scale(1.03)`;
+    }
+    if (badgeBottom) {
+      badgeBottom.style.transform = `translate(${x * -0.06}px, ${y * -0.06}px) scale(1.03)`;
+    }
+  });
+
+  stage.addEventListener('mouseleave', () => {
+    laptop.style.transform = '';
+    laptop.style.transition = 'transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+    if (badgeTop) badgeTop.style.transform = '';
+    if (badgeBottom) badgeBottom.style.transform = '';
+    setTimeout(() => { laptop.style.transition = ''; }, 600);
+  });
+}
+
+// ==========================================================================
+// Scroll Reveal Animations
+// ==========================================================================
+
+function initScrollAnimations() {
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  const revealTargets = document.querySelectorAll('.bento-card, .case-card, .timeline-item, .specialty-card, .tool-sandbox-col');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  revealTargets.forEach(el => {
+    el.classList.add('reveal-item');
+    observer.observe(el);
+  });
+}
+
+// ==========================================================================
+// Language & i18n
+// ==========================================================================
+
+function initLanguage() {
+  const savedLang = localStorage.getItem('mm-lang');
+  if (savedLang && (savedLang === 'en' || savedLang === 'ar')) {
+    currentLang = savedLang;
+  } else {
+    currentLang = 'en';
+  }
+  applyLanguage(currentLang);
+
+  const langBtn = document.getElementById('lang-toggle-btn');
+  if (langBtn) {
+    langBtn.addEventListener('click', () => {
+      const nextLang = currentLang === 'en' ? 'ar' : 'en';
+      applyLanguage(nextLang);
+    });
+  }
+
+  const drawerLangBtn = document.getElementById('drawer-lang-btn');
+  if (drawerLangBtn) {
+    drawerLangBtn.addEventListener('click', () => {
+      const nextLang = currentLang === 'en' ? 'ar' : 'en';
+      applyLanguage(nextLang);
+    });
+  }
+}
+
+function applyLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem('mm-lang', lang);
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+  // Update button labels
+  const langBtn = document.getElementById('lang-toggle-btn');
+  if (langBtn) langBtn.textContent = lang === 'en' ? 'العربية' : 'EN';
+  const drawerLangBtn = document.getElementById('drawer-lang-btn');
+  if (drawerLangBtn) drawerLangBtn.textContent = lang === 'en' ? 'العربية' : 'EN';
+
+  // Replace text for all elements with data-i18n
+  const dict = I18N_DATA[lang] || I18N_DATA.en;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key]) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = dict[key];
+      } else {
+        el.innerHTML = dict[key];
+      }
+    }
+  });
+
+  // Re-render dynamic case studies
+  renderCaseStudies();
+
+  // Update live simulator placeholders and text
+  updateSimulatorLang();
+}
+
+// ==========================================================================
+// Case Studies Rendering & Filtering
+// ==========================================================================
+
+function renderCaseStudies() {
+  const container = document.getElementById('cases-cards-container');
+  if (!container) return;
+
+  const isAr = currentLang === 'ar';
+  const filtered = activeCaseFilter === 'all' 
+    ? CASE_STUDIES 
+    : CASE_STUDIES.filter(c => c.category === activeCaseFilter);
+
+  container.innerHTML = filtered.map(c => {
+    const title = isAr ? c.title_ar : c.title_en;
+    const desc = isAr ? c.desc_ar : c.desc_en;
+    const m1 = c.metrics[0];
+    const m2 = c.metrics[2] || c.metrics[1];
+
+    return `
+      <article class="case-card tilt-card" data-case-id="${c.id}">
+        <div class="case-card-thumb-wrap" onclick="openCaseModal('${c.id}')">
+          <img src="${c.img}" alt="${title}" class="case-card-thumb" loading="lazy">
+          <span class="case-badge-pill">${c.platform}</span>
+          <div class="case-zoom-overlay">
+            <div class="zoom-icon-circle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="case-card-body">
+          <h3 class="case-card-title">${title}</h3>
+          <p class="case-card-desc">${desc}</p>
+          <div class="case-metrics-badges">
+            <div class="case-metric-small">
+              <span class="case-metric-val">${m1.val}</span>
+              <span class="case-metric-name">${isAr ? m1.label_ar : m1.label_en}</span>
+            </div>
+            <div class="case-metric-small">
+              <span class="case-metric-val">${m2.val}</span>
+              <span class="case-metric-name">${isAr ? m2.label_ar : m2.label_en}</span>
+            </div>
+          </div>
+          <button class="case-card-btn" onclick="openCaseModal('${c.id}')">
+            <span>${isAr ? 'عرض التقرير الكامل والأدلة' : 'View Full Proof & Strategy'}</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+      </article>
+    `;
+  }).join('');
+}
+
+// Case filter buttons
+document.addEventListener('click', (e) => {
+  const filterBtn = e.target.closest('.case-filter-btn');
+  if (filterBtn) {
+    document.querySelectorAll('.case-filter-btn').forEach(b => b.classList.remove('active'));
+    filterBtn.classList.add('active');
+    activeCaseFilter = filterBtn.getAttribute('data-filter') || 'all';
+    renderCaseStudies();
+  }
+});
+
+// ==========================================================================
+// Case Study Detail Modal & Fullscreen Lightbox
+// ==========================================================================
+
+function openCaseModal(caseId) {
+  const c = CASE_STUDIES.find(item => item.id === caseId);
+  if (!c) return;
+
+  const isAr = currentLang === 'ar';
+  const title = isAr ? c.title_ar : c.title_en;
+  const desc = isAr ? c.desc_ar : c.desc_en;
+  const industry = isAr ? c.industry_ar : c.industry_en;
+  const period = isAr ? c.period_ar : c.period_en;
+  const strategy = isAr ? c.strategy_ar : c.strategy_en;
+
+  const metricsHTML = c.metrics.map(m => `
+    <div style="background:var(--bg-secondary);padding:14px;border-radius:var(--radius-md);border:1px solid var(--border-subtle);text-align:center;">
+      <div style="font-size:1.4rem;font-weight:900;color:var(--primary);font-family:var(--font-mono);">${m.val}</div>
+      <div style="font-size:0.76rem;color:var(--text-muted);font-weight:600;margin-top:4px;">${isAr ? m.label_ar : m.label_en}</div>
+    </div>
+  `).join('');
+
+  const strategyHTML = strategy.map(item => `
+    <li style="display:flex;align-items:flex-start;gap:10px;margin-bottom:8px;font-size:0.92rem;color:var(--text-muted);">
+      <svg style="color:var(--primary);flex-shrink:0;margin-top:3px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      <span>${item}</span>
+    </li>
+  `).join('');
+
+  const modalBody = document.getElementById('modal-case-body');
+  if (!modalBody) return;
+
+  modalBody.innerHTML = `
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+      <span class="eyebrow-badge" style="margin:0;">${c.platform}</span>
+      <span style="font-size:0.8rem;color:var(--text-subtle);font-family:var(--font-mono);">${industry} • ${period}</span>
+    </div>
+    <h2 style="font-size:1.8rem;font-weight:900;color:var(--text-main);line-height:1.25;margin-bottom:12px;">${title}</h2>
+    <p style="font-size:1rem;color:var(--text-muted);line-height:1.6;margin-bottom:24px;">${desc}</p>
+    
+    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(130px, 1fr));gap:12px;margin-bottom:28px;">
+      ${metricsHTML}
+    </div>
+
+    <div style="margin-bottom:28px;">
+      <h3 style="font-size:1.15rem;font-weight:800;color:var(--text-main);margin-bottom:12px;">
+        ${isAr ? 'الاستراتيجية والتنفيذ' : 'Optimization Approach & Execution'}
+      </h3>
+      <ul style="list-style:none;padding:0;">
+        ${strategyHTML}
+      </ul>
+    </div>
+
+    <div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+        <h3 style="font-size:1.15rem;font-weight:800;color:var(--text-main);">
+          ${isAr ? 'الدليل الموثق من التحليلات' : 'Verified Evidence (Google Analytics & Search Console)'}
+        </h3>
+        <button onclick="openLightbox('${c.img}', '${title.replace(/'/g, "\\'")}')" style="font-size:0.82rem;font-weight:700;color:var(--primary);display:inline-flex;align-items:center;gap:4px;">
+          <span>${isAr ? 'تكبير الصورة' : 'Full Screen Zoom'}</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </div>
+      <div class="modal-proof-img-wrap" style="cursor:zoom-in;" onclick="openLightbox('${c.img}', '${title.replace(/'/g, "\\'")}')">
+        <img src="${c.img}" alt="${title}" class="modal-proof-img">
+      </div>
+      <p style="font-size:0.78rem;color:var(--text-subtle);text-align:center;font-family:var(--font-mono);">
+        ${isAr ? 'مصدر البيانات: Google Search Console وGoogle Analytics 4' : 'Verified Source: Google Search Console & Google Analytics 4 Reports'}
+      </p>
+    </div>
+  `;
+
+  const modal = document.getElementById('case-modal');
+  if (modal) {
+    if (typeof modal.showModal === 'function') {
+      try {
+        if (!modal.open) modal.showModal();
+      } catch (e) {
+        modal.classList.add('open');
+      }
+    } else {
+      modal.classList.add('open');
+    }
+  }
+}
+
+function closeCaseModal() {
+  const modal = document.getElementById('case-modal');
+  if (modal) {
+    if (typeof modal.close === 'function') {
+      try {
+        if (modal.open) modal.close();
+      } catch (e) {
+        modal.classList.remove('open');
+      }
+    } else {
+      modal.classList.remove('open');
+    }
+  }
+}
+
+function openLightbox(src, caption) {
+  const lightbox = document.getElementById('fullscreen-lightbox');
+  const img = document.getElementById('lightbox-img');
+  const cap = document.getElementById('lightbox-cap');
+  if (lightbox && img) {
+    img.src = src;
+    img.alt = caption || '';
+    if (cap) cap.textContent = caption || '';
+    if (typeof lightbox.showModal === 'function') {
+      try {
+        if (!lightbox.open) lightbox.showModal();
+      } catch (e) {
+        lightbox.classList.add('open');
+      }
+    } else {
+      lightbox.classList.add('open');
+    }
+  }
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById('fullscreen-lightbox');
+  if (lightbox) {
+    if (typeof lightbox.close === 'function') {
+      try {
+        if (lightbox.open) lightbox.close();
+      } catch (e) {
+        lightbox.classList.remove('open');
+      }
+    } else {
+      lightbox.classList.remove('open');
+    }
+  }
+}
+
+function initModals() {
+  const closeBtn = document.getElementById('case-modal-close');
+  if (closeBtn) closeBtn.addEventListener('click', closeCaseModal);
+
+  const lightboxCloseBtn = document.getElementById('lightbox-close-btn');
+  if (lightboxCloseBtn) lightboxCloseBtn.addEventListener('click', closeLightbox);
+
+  // Modern Web Guidance: Fallback for browsers without native <dialog closedby="any">
+  if (typeof HTMLDialogElement !== 'undefined' && !('closedBy' in HTMLDialogElement.prototype)) {
+    const outside = (e, dialog) => {
+      const r = dialog.getBoundingClientRect();
+      return e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom;
+    };
+    for (const dialog of document.querySelectorAll('dialog[closedby="any"]')) {
+      let pressedOutside = false;
+      dialog.addEventListener('pointerdown', (e) => { 
+        pressedOutside = outside(e, dialog); 
+      });
+      dialog.addEventListener('pointerup', (e) => { 
+        if (pressedOutside && outside(e, dialog)) {
+          if (dialog.id === 'fullscreen-lightbox') closeLightbox();
+          else if (dialog.id === 'case-modal') closeCaseModal();
+          else if (typeof dialog.close === 'function') dialog.close();
+        } 
+      });
+    }
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeLightbox();
+      closeCaseModal();
+      closeMobileDrawer();
+    }
+  });
+}
+
+// ==========================================================================
+// Live SERP & ASO Simulator
+// ==========================================================================
+
+function initSimulator() {
+  const titleInput = document.getElementById('sim-input-title');
+  const urlInput = document.getElementById('sim-input-url');
+  const descInput = document.getElementById('sim-input-desc');
+
+  if (!titleInput || !urlInput || !descInput) return;
+
+  // Load initial preset
+  applySimPreset('shopify');
+
+  // Input listeners
+  titleInput.addEventListener('input', updateSimPreview);
+  urlInput.addEventListener('input', updateSimPreview);
+  descInput.addEventListener('input', updateSimPreview);
+
+  // Preset buttons
+  document.querySelectorAll('.preset-pill').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.preset-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const presetKey = btn.getAttribute('data-preset');
+      applySimPreset(presetKey);
+    });
+  });
+
+  // Device toggle buttons
+  document.querySelectorAll('.device-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.device-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const device = btn.getAttribute('data-device');
+      const box = document.getElementById('serp-preview-card');
+      if (box) {
+        if (device === 'mobile') {
+          box.style.maxWidth = '390px';
+          box.style.margin = '0 auto';
+        } else {
+          box.style.maxWidth = '100%';
+        }
+      }
+    });
+  });
+
+  // Tools tabs (SERP vs ROI)
+  document.querySelectorAll('.tool-tab-btn').forEach(tabBtn => {
+    tabBtn.addEventListener('click', () => {
+      document.querySelectorAll('.tool-tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tool-tab-pane').forEach(p => p.classList.remove('active'));
+      tabBtn.classList.add('active');
+      const targetPane = document.getElementById(tabBtn.getAttribute('data-tab'));
+      if (targetPane) targetPane.classList.add('active');
+    });
+  });
+}
+
+function applySimPreset(key) {
+  const p = SIMULATOR_PRESETS[key] || SIMULATOR_PRESETS.shopify;
+  const titleInput = document.getElementById('sim-input-title');
+  const urlInput = document.getElementById('sim-input-url');
+  const descInput = document.getElementById('sim-input-desc');
+
+  if (titleInput) titleInput.value = p.title;
+  if (urlInput) urlInput.value = p.url;
+  if (descInput) descInput.value = p.desc;
+
+  updateSimPreview();
+}
+
+function updateSimPreview() {
+  const titleInput = document.getElementById('sim-input-title');
+  const urlInput = document.getElementById('sim-input-url');
+  const descInput = document.getElementById('sim-input-desc');
+
+  const prevTitle = document.getElementById('preview-serp-title');
+  const prevUrl = document.getElementById('preview-serp-url');
+  const prevDesc = document.getElementById('preview-serp-desc');
+  const titleLen = document.getElementById('sim-title-len');
+  const descLen = document.getElementById('sim-desc-len');
+
+  const titleVal = titleInput ? titleInput.value.trim() : '';
+  const urlVal = urlInput ? urlInput.value.trim() : '';
+  const descVal = descInput ? descInput.value.trim() : '';
+
+  if (prevTitle) prevTitle.textContent = titleVal || 'Enter your SEO page title...';
+  if (prevUrl) prevUrl.textContent = urlVal || 'https://yourwebsite.com › page';
+  if (prevDesc) prevDesc.textContent = descVal || 'Enter your meta description to see how it renders in Google search results...';
+
+  if (titleLen) {
+    titleLen.textContent = `${titleVal.length} / 60 chars`;
+    titleLen.style.color = titleVal.length > 60 ? '#B91C1C' : 'var(--primary)';
+  }
+  if (descLen) {
+    descLen.textContent = `${descVal.length} / 160 chars`;
+    descLen.style.color = descVal.length > 160 ? '#B91C1C' : 'var(--primary)';
+  }
+}
+
+function updateSimulatorLang() {
+  const isAr = currentLang === 'ar';
+  if (isAr) {
+    applySimPreset('salla');
+  } else {
+    applySimPreset('shopify');
+  }
+}
+
+// ==========================================================================
+// Organic ROI & Growth Calculator
+// ==========================================================================
+
+function initRoiCalculator() {
+  const trafficSlider = document.getElementById('calc-slider-traffic');
+  const aovSlider = document.getElementById('calc-slider-aov');
+  const growthSlider = document.getElementById('calc-slider-growth');
+  const crSlider = document.getElementById('calc-slider-cr');
+
+  if (!trafficSlider || !aovSlider || !growthSlider || !crSlider) return;
+
+  const updateCalc = () => {
+    const traffic = parseFloat(trafficSlider.value) || 0;
+    const aov = parseFloat(aovSlider.value) || 0;
+    const growthPercent = parseFloat(growthSlider.value) || 0;
+    const cr = (parseFloat(crSlider.value) || 1.8) / 100;
+
+    // Display values
+    document.getElementById('disp-traffic').textContent = traffic.toLocaleString();
+    document.getElementById('disp-aov').textContent = `${aov.toFixed(0)}`;
+    document.getElementById('disp-growth').textContent = `+${growthPercent}%`;
+    document.getElementById('disp-cr').textContent = `${(cr * 100).toFixed(1)}%`;
+
+    // Formulas
+    const additionalVisitors = traffic * (growthPercent / 100);
+    const additionalOrdersMonthly = additionalVisitors * cr;
+    const additionalRevenueMonthly = additionalOrdersMonthly * aov;
+    const additionalRevenueAnnual = additionalRevenueMonthly * 12;
+
+    document.getElementById('roi-annual-rev').textContent = `+${Math.round(additionalRevenueAnnual).toLocaleString()}`;
+    document.getElementById('roi-additional-visitors').textContent = `+${Math.round(additionalVisitors).toLocaleString()}`;
+    document.getElementById('roi-additional-orders').textContent = `+${Math.round(additionalOrdersMonthly).toLocaleString()}`;
+  };
+
+  trafficSlider.addEventListener('input', updateCalc);
+  aovSlider.addEventListener('input', updateCalc);
+  growthSlider.addEventListener('input', updateCalc);
+  crSlider.addEventListener('input', updateCalc);
+
+  updateCalc();
+}
+
+// ==========================================================================
+// FAQ Accordion
+// ==========================================================================
+
+function initFaqAccordion() {
+  document.querySelectorAll('.faq-question-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      if (!item) return;
+      const isOpen = item.classList.contains('open');
+
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) {
+        item.classList.add('open');
+      }
+    });
+  });
+}
+
+// ==========================================================================
+// Number Counter Animation
+// ==========================================================================
+
+function initCounters() {
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.counter-trigger').forEach(el => observer.observe(el));
+}
+
+function animateCounter(el) {
+  const targetText = el.getAttribute('data-target') || el.textContent;
+  const numMatch = targetText.match(/([0-9.]+)/);
+  if (!numMatch) return;
+
+  const targetNum = parseFloat(numMatch[1]);
+  const prefix = targetText.split(numMatch[1])[0] || '';
+  const suffix = targetText.split(numMatch[1])[1] || '';
+  const isFloat = numMatch[1].includes('.');
+  const duration = 1800;
+  const start = performance.now();
+
+  function update(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const easeOut = 1 - Math.pow(1 - progress, 3);
+    const current = targetNum * easeOut;
+
+    el.textContent = `${prefix}${isFloat ? current.toFixed(1) : Math.round(current)}${suffix}`;
+    if (progress < 1) {
+      requestAnimationFrame(update);
+    } else {
+      el.textContent = targetText;
+    }
+  }
+
+  requestAnimationFrame(update);
+}
+
+// ==========================================================================
+// Antigravity 3D Card Tilt Effect
+// ==========================================================================
+
+function initTiltEffect() {
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  const cards = document.querySelectorAll('.tilt-card');
+  cards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      const rotateX = ((y - centerY) / centerY) * -6;
+      const rotateY = ((x - centerX) / centerX) * 6;
+
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
+}
+
+// ==========================================================================
+// Scroll Effects: Progress Bar, Navbar Sticky, & Back to Top
+// ==========================================================================
+
+function initScrollEffects() {
+  const progressBar = document.getElementById('scroll-progress');
+  const siteNav = document.getElementById('site-nav');
+  const backToTopBtn = document.getElementById('back-to-top-btn');
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = docHeight > 0 ? (scrollY / docHeight) * 100 : 0;
+
+    if (progressBar) progressBar.style.width = `${scrollPercent}%`;
+
+    if (siteNav) {
+      if (scrollY > 40) {
+        siteNav.classList.add('scrolled');
+      } else {
+        siteNav.classList.remove('scrolled');
+      }
+    }
+
+    if (backToTopBtn) {
+      if (scrollY > 500) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    }
+  }, { passive: true });
+
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // Mobile menu toggle
+  const menuToggle = document.getElementById('menu-toggle-btn');
+  const drawerClose = document.getElementById('drawer-close-btn');
+  const drawerBackdrop = document.getElementById('drawer-backdrop');
+
+  if (menuToggle) menuToggle.addEventListener('click', openMobileDrawer);
+  if (drawerClose) drawerClose.addEventListener('click', closeMobileDrawer);
+  if (drawerBackdrop) drawerBackdrop.addEventListener('click', closeMobileDrawer);
+
+  document.querySelectorAll('.drawer-link').forEach(link => {
+    link.addEventListener('click', closeMobileDrawer);
+  });
+}
+
+function openMobileDrawer() {
+  const drawer = document.getElementById('mobile-drawer');
+  const backdrop = document.getElementById('drawer-backdrop');
+  if (drawer) drawer.classList.add('open');
+  if (backdrop) backdrop.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMobileDrawer() {
+  const drawer = document.getElementById('mobile-drawer');
+  const backdrop = document.getElementById('drawer-backdrop');
+  if (drawer) drawer.classList.remove('open');
+  if (backdrop) backdrop.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// ==========================================================================
+// Contact Actions: Copy Email, WhatsApp Generator
+// ==========================================================================
+
+function copyEmailToClipboard(email = 'mariamdoghem1999@gmail.com') {
+  navigator.clipboard.writeText(email).then(() => {
+    showToast(currentLang === 'ar' ? 'تم نسخ البريد الإلكتروني بنجاح!' : 'Email copied to clipboard!');
+  }).catch(() => {
+    // fallback
+    const tempInput = document.createElement('input');
+    tempInput.value = email;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+    showToast(currentLang === 'ar' ? 'تم نسخ البريد الإلكتروني بنجاح!' : 'Email copied to clipboard!');
+  });
+}
+
+function showToast(message) {
+  const toast = document.getElementById('toast-notice');
+  if (!toast) return;
+
+  const msgSpan = document.getElementById('toast-msg');
+  if (msgSpan) msgSpan.textContent = message;
+
+  toast.classList.add('show');
+  setTimeout(() => {
+    toast.classList.remove('show');
+  }, 3200);
+}
+
+// Contact form WhatsApp submission
+function handleContactSubmit(e) {
+  e.preventDefault();
+  const name = document.getElementById('form-name')?.value || '';
+  const email = document.getElementById('form-email')?.value || '';
+  const phone = document.getElementById('form-phone')?.value || '';
+  const platform = document.getElementById('form-platform')?.value || '';
+  const msg = document.getElementById('form-msg')?.value || '';
+
+  const isAr = currentLang === 'ar';
+  const greeting = isAr
+    ? `مرحباً مريم، أنا ${name}، أرغب في مناقشة مشروع سيو ونمو عضوي:\n- المنصة: ${platform}\n- البريد: ${email}\n- الهاتف: ${phone}\n- التفاصيل: ${msg}`
+    : `Hi Mariam, I'm ${name}, interested in an SEO & Organic Growth project:\n- Platform: ${platform}\n- Email: ${email}\n- Phone: ${phone}\n- Details: ${msg}`;
+
+  const encoded = encodeURIComponent(greeting);
+  window.open(`https://wa.me/201063202939?text=${encoded}`, '_blank');
+}
+
+// Calculator prefill WhatsApp
+function handleRoiWhatsApp() {
+  const traffic = document.getElementById('disp-traffic')?.textContent || '';
+  const aov = document.getElementById('disp-aov')?.textContent || '';
+  const growth = document.getElementById('disp-growth')?.textContent || '';
+  const annualRev = document.getElementById('roi-annual-rev')?.textContent || '';
+
+  const isAr = currentLang === 'ar';
+  const text = isAr
+    ? `مرحباً مريم، قمت بتجربة حاسبة العائد الاستثماري (ROI) في موقعك وأرغب في مناقشة تحقيق نمو بقيمة ${annualRev} سنوياً لمتجري (الزيارات الحالية: ${traffic}، متوسط الطلب: ${aov}، نمو مستهدف: ${growth}).`
+    : `Hi Mariam, I tested the ROI Calculator on your portfolio and want to discuss scaling our store to achieve ${annualRev} additional annual revenue (Current Traffic: ${traffic}, AOV: ${aov}, Target Growth: ${growth}).`;
+
+  window.open(`https://wa.me/201063202939?text=${encodeURIComponent(text)}`, '_blank');
+}
+
+</script>
 </body>
 </html>
