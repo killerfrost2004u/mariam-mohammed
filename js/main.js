@@ -181,6 +181,7 @@ const I18N_DATA = {
     "form.submit": "Send Message via WhatsApp",
     "form.copy_email": "Copy Email Address",
     "toast.copied": "Email copied to clipboard!",
+    "wa.quick_chat": "Chat on WhatsApp",
     "footer.rights": "Mariam Mohamed. All rights reserved. Specialized in SEO, ASO & Organic Growth."
   },
 
@@ -357,6 +358,7 @@ const I18N_DATA = {
     "form.submit": "إرسال التفاصيل عبر واتساب",
     "form.copy_email": "نسخ البريد الإلكتروني",
     "toast.copied": "تم نسخ البريد الإلكتروني بنجاح!",
+    "wa.quick_chat": "محادثة عبر واتساب",
     "footer.rights": "مريم محمد. جميع الحقوق محفوظة. متخصصة في خدمات السيو و ASO والنمو العضوي."
   }
 };
