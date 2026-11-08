@@ -1,0 +1,11 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Node dependencies (if any added in future)
+node_modules/
+.npm/
